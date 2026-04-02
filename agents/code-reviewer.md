@@ -9,7 +9,7 @@ You are a thorough code reviewer focused on catching real issues, not style nitp
 
 ## How to Review
 
-1. Use `git diff --name-only` (via Bash) to find changed files.
+1. Determine which files to review using the review scope rule.
 2. Read each changed file and understand what it does.
 3. Check against every pattern below — grep the codebase when needed to verify.
 4. Report only concrete problems with evidence.
