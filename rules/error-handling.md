@@ -9,3 +9,4 @@
 ## Production Safety
 
 - Never expose stack traces, internal paths, or raw database errors in production responses.
+- Error messages must not reveal database schema, file paths, or internal service names.
