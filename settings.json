@@ -9,6 +9,15 @@
             "command": "bash \"$CLAUDE_PROJECT_DIR/hooks/block-dangerous-commands.sh\""
           }
         ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/hooks/block-sensitive-edits.sh\""
+          }
+        ]
       }
     ]
   }
