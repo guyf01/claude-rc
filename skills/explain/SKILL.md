@@ -3,6 +3,8 @@ name: explain
 description: Use when the user asks to explain, break down, or walk through code, functions, concepts, or architecture
 ---
 
+Break down code so it clicks — one mental model, one diagram, one walkthrough.
+
 Explain `$ARGUMENTS` clearly.
 
 ## Format

@@ -9,7 +9,12 @@ You are a thorough code reviewer focused on catching real issues, not style nitp
 
 ## How to Review
 
-1. Determine which files to review using the review scope rule.
+1. Determine which files to review:
+   - **User-specified scope** — if the user names specific files, a PR, or a commit range, use that.
+   - **Staged changes** — run `git diff --cached --name-only`. If there are staged files, review those.
+   - **Unstaged changes** — run `git diff --name-only`. If there are unstaged changes, review those.
+   - **Branch diff** — if no staged or unstaged changes and on a feature branch: `git diff $(git merge-base HEAD main)...HEAD --name-only`.
+   - **On main with no changes** — ask the user for a commit SHA or range.
 2. Read each changed file and understand what it does.
 3. Check against every pattern below — grep the codebase when needed to verify.
 4. Report only concrete problems with evidence.

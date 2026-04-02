@@ -1,13 +1,19 @@
 ---
 name: review
-description: Review code changes by delegating to specialist agents and synthesizing a unified report
+description: Use when the user asks to review code, a diff, staged changes, or a PR for quality, security, and performance issues
 ---
 
 Review `$ARGUMENTS`.
 
 ## 1. Determine Review Scope
 
-Use the review scope rule to identify which files changed.
+Determine what to review in this order:
+
+1. **User-specified scope** — if the user names specific files, a PR, or a commit range, use that.
+2. **Staged changes** — run `git diff --cached --name-only`. If there are staged files, review those.
+3. **Unstaged changes** — run `git diff --name-only`. If there are unstaged changes, review those.
+4. **Branch diff** — if no staged or unstaged changes and on a feature branch: `git diff $(git merge-base HEAD main)...HEAD --name-only`.
+5. **On main with no changes** — ask the user for a commit SHA or range.
 
 ## 2. Read the Diff and Delegate
 
