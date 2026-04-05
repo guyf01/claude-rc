@@ -22,13 +22,25 @@ No magic values. Numbers, strings, and config values must be named constants.
 
 ## Comments
 
+The best code needs no comments — only comment what the code itself can never convey.
+
+### Do comment
+
 - WHY, never WHAT. If the code needs a "what" comment, rename instead.
-- Use plain text only — no HTML or markup in comments.
-- Do comment: non-obvious decisions, workarounds with issue links, regex patterns, perf tricks.
-- Do comment edge cases and constraints clearly — explain what the issue is and what to watch for.
-- Don't comment: obvious code, self-explanatory function names, section dividers, type info the language provides.
-- No commented-out code — delete it.
-- No journal comments — git blame handles history.
+- Non-obvious decisions and workarounds (with issue links).
+- Third-party quirks — how an external API behaves in edge cases.
+- Business decisions — rate limits, thresholds, or constraints with specific reasons.
+- Regex patterns, perf tricks.
+- Edge cases and constraints — explain what the issue is and what to watch for.
+
+### Don't comment
+
+- Obvious code, self-explanatory function names.
+- Section dividers — if you need a comment to separate sections, the code should be split into a new function or file instead.
+- Type annotations the language already provides (e.g., don't comment `// returns string` when the signature already says `: string`).
+- Commented-out code — delete it.
+- Journal comments — git blame handles history.
+- HTML or markup in comments — use plain text only.
 
 ## Imports
 
