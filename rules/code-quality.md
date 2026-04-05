@@ -41,6 +41,7 @@ The best code needs no comments — only comment what the code itself can never 
 - Commented-out code — delete it.
 - Journal comments — git blame handles history.
 - HTML or markup in comments — use plain text only.
+- Stale comments — if the code changes, update or remove the comment. A wrong comment is worse than no comment.
 
 ## Imports
 
