@@ -107,6 +107,7 @@ Use for elevated containers that need to stand out — not for every card.
 ### General
 
 - Give buttons generous padding — let them breathe.
+- Round the corners — soft edges feel friendly and approachable.
 - Touch targets: minimum 44x44px.
 
 ### Color
@@ -127,7 +128,10 @@ Don't override the project's brand colors for every button — use psychology fo
 
 For prominent CTAs (e.g., "Get Started"), not every button:
 
-- Confirmation/delete buttons glow on hover, bounce back on press.
+- High font-weight — bold text commands attention.
+- Box shadow to make them glow and pop off the page.
+- On hover: glow intensifies, scale up slightly.
+- On press: bounce back.
 
 ## Anti-Patterns (NEVER)
 
