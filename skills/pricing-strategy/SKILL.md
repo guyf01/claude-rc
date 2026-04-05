@@ -187,7 +187,18 @@ Not every tier needs a strategic role — a product with three honest value leve
 
 ### Feature Gating Rules
 
+**How to gate** — decide what differentiates tiers:
+
+- **Usage-based** — same features, different limits (projects, storage, API calls). Best when all users need the same tools but at different scales.
+- **Capability-based** — higher tiers unlock new features (automations, reporting, SSO). Best when customer segments have genuinely different needs.
+- **Support-based** — same product, different service levels. Works as a secondary differentiator, not primary.
+
+These aren't mutually exclusive — most products combine them. A higher tier can unlock both more features and higher usage limits.
+
+**How NOT to gate:**
+
 - Never gate security features (2FA, encryption). Gate compliance features (audit logs, data residency).
+- SSO and SAML belong in higher tiers — IT buyers expect this and have budget for it.
 
 ## Step 6: Set the Prices
 
