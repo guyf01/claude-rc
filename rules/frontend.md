@@ -102,9 +102,30 @@ Use for elevated containers that need to stand out — not for every card.
 - Close: don't vanish — scale down and fade out.
 - Background: `blur(20px)` with a deep shadow.
 
-## Premium Buttons
+## Buttons
 
-For prominent CTAs (e.g., "Get Started", not every button):
+### General
+
+- Give buttons generous padding — let them breathe.
+- Touch targets: minimum 44x44px.
+
+### Color
+
+Button color sets the mood — pick a color that fits the state of mind the user should be in when pressing:
+
+- **Blue** — safe, professional, reliable. Use for: primary actions, sign-ups, neutral CTAs.
+- **Green** — go, success, money. Use for: confirmations, "complete purchase", positive actions.
+- **Purple** — trust, premium, security. Use for: checkout, payment, sensitive actions.
+- **Red** — urgency, danger, stop. Use for: destructive actions, warnings. Sparingly for urgency CTAs.
+- **Orange/Yellow** — attention, energy, impulse. Use for: limited-time offers, attention-grabbing CTAs.
+- **Black** — premium, bold, authority. Use for: luxury products, high-end CTAs.
+- **White/outline** — secondary, de-emphasized. Use for: cancel, back, alternative actions.
+
+Don't override the project's brand colors for every button — use psychology for key decision-point CTAs where the emotional state matters.
+
+### Premium
+
+For prominent CTAs (e.g., "Get Started"), not every button:
 
 - Confirmation/delete buttons glow on hover, bounce back on press.
 
