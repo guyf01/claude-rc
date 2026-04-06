@@ -82,6 +82,10 @@ Create depth — never flat solid colors:
 - Grain overlays, subtle dot/grid patterns
 - Blur effects for depth on overlapping elements
 
+## Shapes
+
+- Sharp corners signal threat and tension. Round edges signal safety and friendliness.
+
 ## Optical Sizing
 
 - A circle must be ~13% larger than a square to appear the same size optically.
