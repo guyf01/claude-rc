@@ -3,7 +3,11 @@
 ## Functions
 
 - Single responsibility — each function does one thing. If it needs a section comment, extract that section.
-- Public functions first, then private helpers in call order. Top-to-bottom reads as a story.
+- Fewer arguments is better — zero is ideal, three is a lot. When arguments pile up, they're telling you to pass the idea, not the pieces it's made of — group related ones into objects.
+
+## Classes
+
+- Declare all properties in one place, typically the top of the class (unless the language convention is different).
 
 ## Naming
 
@@ -15,6 +19,10 @@ Names must be intention-revealing, pronounceable, and searchable. A name should 
 - Handlers/callbacks: `handle*` internally, `on*` as props — `handleClick` / `onClick`.
 - Constants: `SCREAMING_SNAKE` — `MAX_RETRIES`, `API_BASE_URL`.
 - Abbreviations: only universally known (`id`, `url`, `api`, `db`, `config`, `auth`). Acronyms as words: `userId` not `userID`.
+
+## Variables
+
+- Declare close to first use — early declarations are baggage for the reader.
 
 ## Constants
 
