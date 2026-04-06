@@ -15,6 +15,23 @@ Code shouldn't demand effort to read — it should tell a story.
 
 - Declare all properties in one place, typically the top of the class (unless the language convention is different).
 
+Every class is a bet on what kind of change is coming next.
+
+**Decouple data from behavior** (e.g., functions/modules that operate on plain data structures) when you expect to add new behaviors. Existing data stays untouched — new behavior just means a new function. But adding a new data type means updating every existing behavior that handles it.
+
+**Couple data and behavior** (e.g., methods on classes) when you expect to add new types. Each new type brings its own behavior — nothing else changes. But adding a new behavior means updating every existing type to implement it.
+
+- Expect new behaviors → decouple: data stays stable, behaviors extend freely.
+- Expect new types → couple: behaviors stay stable, types extend freely.
+
+The design follows the direction of change, not habit.
+
+**Examples:**
+- *Report generator* — fixed types (Order, User, Product), behaviors keep growing (PDF, CSV, email digest) → decouple. A new format is just a new function, nothing else changes.
+- *Notifications* — behaviors are fixed (send, retry, log), channel types keep growing (email, SMS, push, Slack) → couple. A new channel is just a new class, nothing else changes.
+
+When uncertain, coupling is usually the safer default — it's easier to extract behavior from a class later than to reunite data that's been scattered across separate structures.
+
 ## Naming
 
 Names must be intention-revealing, pronounceable, and searchable. A name should answer: why it exists, what it does, and how to use it.
