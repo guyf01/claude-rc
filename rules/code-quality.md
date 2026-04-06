@@ -2,7 +2,13 @@
 
 ## Functions
 
-- Single responsibility — each function does one thing. If it needs a section comment, extract that section.
+Code shouldn't demand effort to read — it should tell a story.
+
+- Single responsibility — each function does one thing.
+- Don't mix different operations or levels of abstraction in one function.
+- One level of abstraction per function — the reader should understand what the code does without understanding how it does it.
+- If you're separating code blocks with empty lines and could give each block a name — that block is a function waiting to be extracted.
+- Blocks inside `if`, `else`, `while`, `try/catch` should ideally be function calls — this gives the logic a name that speaks for itself.
 - Fewer arguments is better — zero is ideal, three is a lot. When arguments pile up, they're telling you to pass the idea, not the pieces it's made of — group related ones into objects.
 
 ## Classes
