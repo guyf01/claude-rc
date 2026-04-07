@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash \"$CLAUDE_PROJECT_DIR/hooks/session-context.sh\"",
+            "command": "bash \"$HOME/.claude/hooks/session-context.sh\"",
             "timeout": 5000,
             "statusMessage": "Loading project context..."
           }
@@ -18,7 +18,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash \"$CLAUDE_PROJECT_DIR/hooks/block-dangerous-commands.sh\"",
+            "command": "bash \"$HOME/.claude/hooks/block-dangerous-commands.sh\"",
             "timeout": 5000,
             "statusMessage": "Checking command safety..."
           }
@@ -29,19 +29,19 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash \"$CLAUDE_PROJECT_DIR/hooks/block-sensitive-edits.sh\"",
+            "command": "bash \"$HOME/.claude/hooks/block-sensitive-edits.sh\"",
             "timeout": 5000,
             "statusMessage": "Checking file protections..."
           },
           {
             "type": "command",
-            "command": "bash \"$CLAUDE_PROJECT_DIR/hooks/scan-secrets.sh\"",
+            "command": "bash \"$HOME/.claude/hooks/scan-secrets.sh\"",
             "timeout": 5000,
             "statusMessage": "Scanning for secrets..."
           },
           {
             "type": "command",
-            "command": "bash \"$CLAUDE_PROJECT_DIR/hooks/block-generated-files.sh\"",
+            "command": "bash \"$HOME/.claude/hooks/block-generated-files.sh\"",
             "timeout": 5000,
             "statusMessage": "Checking for build artifacts..."
           }
