@@ -6,6 +6,16 @@
 
 - [poshan0126/dotclaude](https://github.com/poshan0126/dotclaude) — lean, token-efficient `.claude/` config. Good reference for agent design, hooks, and scoped rules.
 
+## Installed Plugins
+
+- [superpowers](https://github.com/claude-plugins-official/superpowers) — core workflow skills: brainstorming, planning, debugging, code review, TDD, subagents, git worktrees, verification
+- [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) — distinctive production-grade UI generation, avoids generic AI aesthetics
+- [skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator) — full skill development lifecycle: write, evaluate, benchmark, and iterate on skills
+- [code-review](https://github.com/claude-plugins-official/code-review) — PR code review
+- [feature-dev](https://github.com/claude-plugins-official/feature-dev) — guided feature development with codebase understanding
+- [ralph-loop](https://github.com/claude-plugins-official/ralph-loop) — recurring prompt loop runner
+- [security-guidance](https://github.com/claude-plugins-official/security-guidance) — security review and guidance
+
 ## To Explore
 
 - [HKUDS/OpenSpace](https://github.com/HKUDS/OpenSpace) — self-evolving AI agent framework. Skills improve from successful executions and sync to a community. MCP-based, plugs into Claude Code. Low effort to try — worth experimenting with.
