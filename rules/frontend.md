@@ -4,7 +4,11 @@
 
 Before writing UI code, understand the project's stack — check package.json, imports, and existing components. Use what's already there. Never introduce a competing library.
 
-Think before coding: what problem does this UI solve? What should the user feel? Pick a design direction that fits the product.
+Think before coding: what problem does this UI solve? Who uses it? What should they feel? What's the tone — brutally minimal, maximalist, editorial, playful, refined? What are the constraints? And what's the one thing that makes it unforgettable? Pick a clear direction and commit to it — bold maximalism and refined minimalism both work, the key is intentionality.
+
+Never produce generic AI-looking output. Avoid safe, predictable choices. Every design should be unique — make a genuine creative decision every time.
+
+Match implementation complexity to the aesthetic vision. Maximalist designs deserve elaborate code — layered effects, rich animations, dense interactions. Minimalist designs demand precision — exact spacing, careful typography, subtle details. Elegance comes from executing the vision well, not from a fixed level of effort.
 
 ## Responsive
 
@@ -29,7 +33,23 @@ Mobile-first: design at 320px, enhance upward through breakpoints.
 
 - Images: `loading="lazy"` below the fold, explicit `width`/`height`.
 
-## Design Principles
+## Tone
+
+Pick one that fits the product's personality:
+
+- Brutally minimal — stripped to essentials, nothing decorative
+- Maximalist chaos — rich, layered, overwhelming in a deliberate way
+- Retro-futuristic — nostalgia meets sci-fi, CRT glows, synthwave
+- Organic/natural — soft, earthy, alive
+- Luxury/refined — restrained elegance, expensive feeling
+- Playful/toy-like — rounded, bouncy, approachable
+- Editorial/magazine — strong type hierarchy, large imagery, asymmetric
+- Brutalist/raw — exposed structure, stark contrast, anti-polish
+- Art deco/geometric — structured ornament, bold symmetry
+- Soft/pastel — gentle, low-contrast, calm
+- Industrial/utilitarian — functional, no-frills, honest materials
+
+## Visual Style
 
 Pick one that fits the product:
 
@@ -47,7 +67,7 @@ Pick one that fits the product:
 
 ## Typography
 
-Choose fonts that are beautiful, unique, and interesting.
+Choose fonts that are beautiful, unique, and interesting. Pair a distinctive display font with a refined body font — one makes the statement, the other carries the reading.
 
 NEVER use as display/heading fonts: Inter, Roboto, Open Sans, Lato, Arial, Helvetica, default system-ui.
 
@@ -63,6 +83,7 @@ White text on dark backgrounds looks heavier than black text on white. Reduce fo
 
 ## Color
 
+- Use CSS variables for all colors — never hardcode hex values scattered across the codebase.
 - Dominant color with sharp accents beats evenly-distributed palettes.
 - Dark themes: never pure `#000` — use near-blacks like `#0a0a0a`, `#111`, `#1a1a2e`.
 - Light themes: never pure `#fff` — use warm whites like `#fafafa`, `#f8f7f4`, `#fef9ef`.
@@ -72,6 +93,8 @@ White text on dark backgrounds looks heavier than black text on white. Reduce fo
 
 - Whitespace is a design element.
 - Touch targets: minimum 44x44px.
+- Break predictable grids — asymmetry, overlapping elements, and diagonal flow create visual interest.
+- Commit to either generous negative space or controlled density. Never land in the middle.
 
 ## Backgrounds & Atmosphere
 
@@ -100,7 +123,13 @@ Use for elevated containers that need to stand out — not for every card.
 - Border: `1px solid rgba(255, 255, 255, 0.5)`
 - Box shadow: `0 8px 32px rgba(0, 0, 0, 0.15)`
 
-## Modal Animation
+## Motion
+
+- For plain HTML/CSS: CSS transitions and animations only.
+- For React: prefer the Motion library.
+- One well-orchestrated page load with staggered reveals (`animation-delay`) creates more delight than scattered micro-interactions everywhere.
+
+## Premium Popup
 
 - Open: spring scale with overshoot, content staggers in.
 - Close: don't vanish — scale down and fade out.

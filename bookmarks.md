@@ -2,6 +2,8 @@
 
 ## Inspiration
 
+- [anthropics/skills](https://github.com/anthropics/skills) — Anthropic's official skills collection. Reviewed frontend-design.
+
 - [poshan0126/dotclaude](https://github.com/poshan0126/dotclaude) — lean, token-efficient `.claude/` config. Good reference for agent design, hooks, and scoped rules.
 
 ## To Explore
