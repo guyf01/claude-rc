@@ -115,6 +115,16 @@ Builtins → external → internal → relative → types. Blank line between gr
 
 No dead code. History is handled by git.
 
+### Documentation
+
+Documentation lets users understand what code does without reading the implementation. Good docs follow a simple pattern:
+
+1. **What it does** — one sentence describing the purpose
+2. **Usage example** — a minimal working example
+3. **What goes in** — parameters, types, constraints
+4. **What comes out** — return value, type, shape
+5. **What can go wrong** — errors thrown, edge cases, failure modes
+
 ### Security
 
 **Input:**
