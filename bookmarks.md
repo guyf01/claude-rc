@@ -3,6 +3,7 @@
 ## Inspiration
 
 - [anthropics/skills](https://github.com/anthropics/skills) — Anthropic's official skills collection. Reviewed frontend-design.
+- [UI/UX Pro Max](https://lobehub.com/skills/qdleader-qdleader-ui-ux-pro-max) — 50+ styles, 97 color palettes, 57 font pairings, 99 UX guidelines, 25 chart types. Fully cherry-picked into frontend.md.
 
 - [poshan0126/dotclaude](https://github.com/poshan0126/dotclaude) — lean, token-efficient `.claude/` config. Good reference for agent design, hooks, and scoped rules.
 

@@ -17,7 +17,13 @@ Mobile-first: design at 320px, enhance upward through breakpoints.
 ## Accessibility (non-negotiable)
 
 - All interactive elements must be keyboard-accessible.
+- Visible focus rings on all interactive elements.
+- Tab order must match visual order.
 - Images: meaningful alt text. Decorative images: `alt=""`.
+- Icon-only buttons must have `aria-label`.
+- Form inputs must have a `<label>` with a matching `for` attribute.
+- Minimum 4.5:1 contrast ratio for normal text.
+- Never use color as the only indicator of state or meaning.
 
 ## Frameworks
 
@@ -31,7 +37,9 @@ Mobile-first: design at 320px, enhance upward through breakpoints.
 
 ## Performance
 
-- Images: `loading="lazy"` below the fold, explicit `width`/`height`.
+- Images: WebP format, `srcset` for responsive sizes, `loading="lazy"` below the fold, explicit `width`/`height`.
+- Reserve space for async content — skeleton screens or explicit dimensions prevent layout jumps.
+- Respect `prefers-reduced-motion` — disable or reduce animations for users who request it.
 
 ## Tone
 
@@ -81,6 +89,9 @@ Reach for instead:
 
 White text on dark backgrounds looks heavier than black text on white. Reduce font weight by one step to compensate.
 
+- Body text line height: 1.5–1.75.
+- Line length: 65–75 characters per line maximum.
+
 ## Color
 
 - Use CSS variables for all colors — never hardcode hex values scattered across the codebase.
@@ -89,12 +100,26 @@ White text on dark backgrounds looks heavier than black text on white. Reduce fo
 - Light themes: never pure `#fff` — use warm whites like `#fafafa`, `#f8f7f4`, `#fef9ef`.
 - NEVER: Purple gradient on white background.
 
+## Interaction
+
+- Touch targets: minimum 44x44px.
+- Add `cursor-pointer` to all clickable elements — cards, buttons, links, anything interactive.
+- Disable buttons during async operations to prevent double-submits.
+- Show error messages near the field that caused them, not at the top of the form.
+- Use click/tap for primary interactions — never rely on hover as the only trigger.
+- Hover states must provide clear visual feedback (color, shadow, border) — no silent hovers.
+- Hover transitions: `150-300ms`. Never instant, never over `500ms`.
+
 ## Layout
 
 - Whitespace is a design element.
-- Touch targets: minimum 44x44px.
 - Break predictable grids — asymmetry, overlapping elements, and diagonal flow create visual interest.
 - Commit to either generous negative space or controlled density. Never land in the middle.
+- Always include `<meta name="viewport" content="width=device-width, initial-scale=1">`.
+- Minimum 16px body text on mobile.
+- No horizontal scroll — all content must fit the viewport width.
+- Test responsiveness at 375px, 768px, 1024px, and 1440px.
+- Define a z-index scale (10, 20, 30, 50) — never use arbitrary values like `9999`.
 
 ## Backgrounds & Atmosphere
 
@@ -128,6 +153,8 @@ Use for elevated containers that need to stand out — not for every card.
 - For plain HTML/CSS: CSS transitions and animations only.
 - For React: prefer the Motion library.
 - One well-orchestrated page load with staggered reveals (`animation-delay`) creates more delight than scattered micro-interactions everywhere.
+- Animate only `transform` and `opacity` — never `width`, `height`, or `top/left`. Animating layout properties causes jank.
+- Always show loading states — skeleton screens or spinners. Never leave the user staring at nothing.
 
 ## Premium Popup
 
@@ -166,8 +193,29 @@ For prominent CTAs (e.g., "Get Started"), not every button:
 - On hover: glow intensifies, scale up slightly.
 - On press: bounce back.
 
+## Charts & Data
+
+- Match chart type to data: trends → line, comparisons → bar, parts of whole → pie, distributions → histogram.
+- Use accessible color palettes — never rely on color alone to differentiate data series.
+- Always provide a data table alternative for screen readers.
+
+## Polish Details
+
+- Hover states must not cause layout shift — use color, opacity, or shadow transitions, not scale transforms.
+- Glass cards in light mode: use `bg-white/80` or higher opacity. `bg-white/10` is invisible.
+- Light mode body text: minimum slate-600 (`#475569`). Never slate-400 or lighter.
+- Muted/secondary text: minimum slate-600 in light mode — never gray-400.
+- Account for fixed navbar height — content must not be hidden behind it.
+- Floating navbars: add `top-4 left-4 right-4` spacing, not flush to the edge.
+- Consistent max-width across all pages — don't mix `max-w-6xl` and `max-w-7xl`.
+- Borders in light mode: use `border-gray-200` — never `border-white/10` (invisible against white).
+- Consistent icon sizing — fixed viewBox (24x24) with consistent size classes.
+- Brand logos: use official SVGs from Simple Icons — never guess or approximate logo paths.
+
 ## Anti-Patterns (NEVER)
 
 - Purple gradient on white background.
 - Gray text on colored backgrounds.
 - Cards inside cards inside cards.
+- Emojis as UI icons — use SVG icons (Lucide, Heroicons, Phosphor).
+- Inconsistent style across pages — commit to one visual direction for the entire product.
