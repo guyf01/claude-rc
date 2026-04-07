@@ -125,9 +125,18 @@ Documentation lets users understand what code does without reading the implement
 4. **What comes out** — return value, type, shape
 5. **What can go wrong** — errors thrown, edge cases, failure modes
 
-### Security
+### Error Handling
 
-**Input:**
+- Fail fast — validate early and surface errors immediately rather than letting bad state propagate.
+- Use typed/custom error classes with error codes — not generic `Error("something went wrong")`.
+- Never swallow errors silently. Log or rethrow with added context about what operation failed.
+- Never expose stack traces, internal paths, or raw database errors in production responses.
+- Error messages must not reveal database schema, file paths, or internal service names.
+
+## Security
+
+### Input
+
 - Validate all user input at the system boundary. Never trust request parameters.
 - Use parameterized queries — never concatenate user input into SQL or shell commands.
 - Avoid invoking shells. If you must, use array-form APIs (`execFile`, `subprocess.run([...])`) — never string-form (`exec`, `os.system`, `child_process.exec`).
@@ -137,10 +146,12 @@ Documentation lets users understand what code does without reading the implement
 - Validate Content-Type on file uploads.
 - Validate file paths — reject `..`, use allowlists, verify resolved path stays within the expected directory.
 
-**Output:**
+### Output
+
 - Sanitize output to prevent XSS. Use framework-provided escaping.
 
-**Authentication:**
+### Authentication
+
 - Authentication tokens must be short-lived. Store refresh tokens server-side only.
 - Rate-limit authentication endpoints.
 - Hash passwords with bcrypt, scrypt, or argon2 — never MD5, SHA1, or SHA256.
@@ -148,31 +159,28 @@ Documentation lets users understand what code does without reading the implement
 - JWTs must include an `exp` claim — no tokens without expiration.
 - Store session tokens in httpOnly cookies, not localStorage.
 
-**Authorization:**
+### Authorization
+
 - Always check ownership and permissions server-side — never rely on frontend-only authorization.
 - Database lookups using user-supplied IDs must verify the resource belongs to the current user.
 
-**Secrets:**
+### Secrets
+
 - Never log secrets, tokens, passwords, or PII.
 - No hardcoded credentials or API keys in code — use environment variables or a secrets manager.
 
-**Cryptography:**
+### Cryptography
+
 - Use `crypto.randomBytes`, `secrets.token_hex`, or equivalent for security tokens — never `Math.random()` or `random.random()`.
 - Never hardcode encryption keys or IVs — load from environment or secrets manager.
 - Never use ECB mode for block ciphers.
 - Enforce HTTPS — redirect HTTP to HTTPS, set HSTS headers.
 
-**Dependencies:**
+### Dependencies
+
 - Pin dependency versions in CI.
 - Use integrity hashes (SRI) when importing from CDNs.
 
-**Headers:**
+### Headers
+
 - Set appropriate CORS, CSP, and security headers.
-
-### Error Handling
-
-- Fail fast — validate early and surface errors immediately rather than letting bad state propagate.
-- Use typed/custom error classes with error codes — not generic `Error("something went wrong")`.
-- Never swallow errors silently. Log or rethrow with added context about what operation failed.
-- Never expose stack traces, internal paths, or raw database errors in production responses.
-- Error messages must not reveal database schema, file paths, or internal service names.
