@@ -19,6 +19,9 @@
 
 ## To Explore
 
+- [Figma MCP + Claude Code](https://github.com/figma/mcp-server-guide) — Figma ↔ Claude Code integration. Figma → production code with 1:1 fidelity, and code → editable Figma frames. Install via `/plugin install figma@claude-plugins-official`. Worth setting up if working with designers or doing client handoffs. Not needed for solo code-first workflow.
+
+
 - [HKUDS/OpenSpace](https://github.com/HKUDS/OpenSpace) — self-evolving AI agent framework. Skills improve from successful executions and sync to a community. MCP-based, plugs into Claude Code. Low effort to try — worth experimenting with.
 - [lobehub/lobehub](https://github.com/lobehub/lobehub) — self-hosted AI agent workspace. Multi-agent teams, persistent memory, 10,000+ MCP skills. Next.js/Docker. More of a productivity platform than a dev tool.
 
