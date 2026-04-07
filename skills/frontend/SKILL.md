@@ -1,4 +1,7 @@
-# Frontend Rules
+---
+name: frontend
+description: Use when building, editing, reviewing, or designing any frontend UI — React components, pages, layouts, styles, visual elements, animations, or accessibility. Trigger for any task involving HTML, CSS, UI code, or visual design decisions.
+---
 
 ## Approach
 
