@@ -17,6 +17,13 @@
 - [feature-dev](https://github.com/claude-plugins-official/feature-dev) — guided feature development with codebase understanding
 - [ralph-loop](https://github.com/claude-plugins-official/ralph-loop) — recurring prompt loop runner
 - [security-guidance](https://github.com/claude-plugins-official/security-guidance) — security review and guidance
+- [wondelai/skills — code-craftsmanship](https://github.com/wondelai/skills) — clean-code, refactoring-patterns, software-design-philosophy, pragmatic-programmer, domain-driven-design
+- [wondelai/skills — systems-architecture](https://github.com/wondelai/skills) — ddia-systems, system-design, clean-architecture, release-it, high-perf-browser
+- [wondelai/skills — product-strategy](https://github.com/wondelai/skills) — jobs-to-be-done, negotiation, mom-test
+- [wondelai/skills — marketing-cro](https://github.com/wondelai/skills) — cro-methodology, storybrand-messaging, scorecard-marketing, contagious, one-page-marketing
+- [wondelai/skills — sales-influence](https://github.com/wondelai/skills) — influence-psychology, predictable-revenue, made-to-stick, hundred-million-offers
+- [wondelai/skills — ux-design](https://github.com/wondelai/skills) — refactoring-ui, ios-hig-design, ux-heuristics, hooked-ux, improve-retention, web-typography, top-design, design-everyday-things, lean-ux, microinteractions
+- [wondelai/skills — strategy-growth](https://github.com/wondelai/skills) — crossing-the-chasm, blue-ocean-strategy, traction-eos, obviously-awesome
 
 ## To Explore
 
