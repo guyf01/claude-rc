@@ -20,6 +20,8 @@
 
 ## To Explore
 
+- [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) — generates favicons, PWA/app icons, and OG social images via conversation. Framework-aware (Next.js, Astro). Requires Python + Pillow. Worth installing when bootstrapping web projects.
+
 - [anthropics/skills — canvas-design](https://github.com/anthropics/skills/tree/main/skills/canvas-design) — generates sophisticated visual art (PDF/PNG). Good for premium web backgrounds, hero section visuals, and decorative assets. Not for structured ad layouts or templated marketing materials.
 - [anthropics/skills — theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory) — 10 preset themes (colors + fonts) for styling slides, documents, and reports. Not for UI dev — only useful if generating polished artifacts through Claude.
 - [Figma MCP + Claude Code](https://github.com/figma/mcp-server-guide) — Figma ↔ Claude Code integration. Figma → production code with 1:1 fidelity, and code → editable Figma frames. Install via `/plugin install figma@claude-plugins-official`. Worth setting up if working with designers or doing client handoffs. Not needed for solo code-first workflow.
