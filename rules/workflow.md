@@ -19,6 +19,13 @@
 - For complex problems, throw more compute at it — spin up subagents.
 - One task per subagent for focused execution.
 
+## Memory
+
+- A persistent memory system lives at `~/.claude/projects/<project>/memory/`. Save learnings there — don't wait to be asked.
+- Save: user preferences, feedback, project context, external references. See memory type definitions in the system prompt.
+- Update `MEMORY.md` index whenever you write a new memory file.
+- At the start of a session, check if relevant memories exist before diving in.
+
 ## Verification Before Done
 
 - Never mark a task complete without proving it works.
