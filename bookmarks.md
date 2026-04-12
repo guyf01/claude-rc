@@ -27,6 +27,7 @@
 
 ## To Explore
 
+- [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads) — paid ads auditor: 225+ checks across Google, Meta, YouTube, LinkedIn, TikTok, Bing, Apple Search Ads. Health scoring (A–F), industry templates, creative fatigue detection, compliance checks. Analyzes pasted/exported data; optional Google Ads MCP for live access.
 - [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) — deep SEO plugin: 19 sub-skills + 12 parallel subagents. Core Web Vitals, E-E-A-T, Search Console/GA4, backlinks, PDF reports. Requires Python 3.10+. Install: `/plugin marketplace add AgriciDaniel/claude-seo` then `/plugin install claude-seo@AgriciDaniel-claude-seo`.
 - [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) — curated skill directory: 33+ skills (dev, data, marketing, security) + 78 Composio workflow skills that give Claude real API access to SaaS tools (GitHub, Slack, Notion, HubSpot, etc.) via MCP. Worth exploring when you want Claude to act inside your tools, not just advise.
 
