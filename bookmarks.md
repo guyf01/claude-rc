@@ -27,6 +27,8 @@
 
 ## To Explore
 
+- [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) — curated skill directory: 33+ skills (dev, data, marketing, security) + 78 Composio workflow skills that give Claude real API access to SaaS tools (GitHub, Slack, Notion, HubSpot, etc.) via MCP. Worth exploring when you want Claude to act inside your tools, not just advise.
+
 - [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) — generates favicons, PWA/app icons, and OG social images via conversation. Framework-aware (Next.js, Astro). Requires Python + Pillow. Worth installing when bootstrapping web projects.
 
 - [anthropics/skills — canvas-design](https://github.com/anthropics/skills/tree/main/skills/canvas-design) — generates sophisticated visual art (PDF/PNG). Good for premium web backgrounds, hero section visuals, and decorative assets. Not for structured ad layouts or templated marketing materials.
