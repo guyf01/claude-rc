@@ -17,6 +17,7 @@ ITEMS=(
   "agents"
   "hooks"
   "settings.json"
+  "bookmarks.md"
 )
 
 for item in "${ITEMS[@]}"; do
