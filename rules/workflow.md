@@ -62,5 +62,5 @@ Every message includes the full conversation history — longer sessions mean mo
 - The topic shifts significantly to a different domain
 - The conversation has been going long (15+ back-and-forths)
 
-Keep the suggestion brief and non-intrusive — one line is enough.
+- If the user's intent seems off or a clarification follow-up is coming, suggest they rewind and edit the original message instead. Say: "You can edit your earlier message instead — keeps the context clean." Follow-ups compound context; edits don't.
 
