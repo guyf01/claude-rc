@@ -101,7 +101,8 @@ The best code needs no comments — only comment what the code itself can never 
 
 **Don't comment:**
 - Obvious code, self-explanatory function names.
-- Section dividers — if you need a comment to separate sections, the code should be split into a new function or file instead.
+- Section dividers — if you need a comment to separate sections, the code should be split into a new function or file instead. Drawing lines between sections doesn't reduce complexity, it just makes the mess look tidy.
+- Closing brace labels (`} // end if`, `} // end loop`) — these are symptoms of code that has grown too large, too nested, or lacks proper modularity. The fix is clean functions that do one thing, not annotations that compensate for the mess.
 - Type annotations the language already provides.
 - Commented-out code — delete it.
 - Journal comments — git blame handles history.
