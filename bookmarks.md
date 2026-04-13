@@ -28,6 +28,8 @@
 
 ## To Explore
 
+- [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) — 13 context engineering skills: degradation patterns, compression, tool design, multi-agent patterns, memory systems, LLM-as-judge, etc. Content quality is solid and research-grounded.
+
 - [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) — 66 `DESIGN.md` files extracted from popular brand sites (Stripe, Linear, Vercel, Apple, etc.). Drop one in your project root and agents generate UI matching that brand's aesthetic. AI-generated summaries, not official tokens — useful for quick prototyping, not production specs.
 
 - [safishamsi/graphify](https://github.com/safishamsi/graphify) — AI coding assistant skill that turns any folder of code, docs, PDFs, images, or video into a queryable knowledge graph. AST extraction via tree-sitter (local, 23 languages), semantic analysis via Claude subagents in parallel, Leiden community detection for clustering. Install: `pip install graphifyy && graphify install && graphify claude install`. Use: `/graphify .` in Claude Code. Persistent graph.json, 71.5x claimed token reduction vs reading raw files. Genuinely useful for navigating large codebases.
