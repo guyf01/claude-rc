@@ -7,6 +7,7 @@
 
 - [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) — comprehensive Claude Code learning guide. 10 modules covering skills, hooks, MCP, subagents, plugins, planning mode. Good reference when going deeper on any Claude Code feature.
 - [poshan0126/dotclaude](https://github.com/poshan0126/dotclaude) — lean, token-efficient `.claude/` config. Good reference for agent design, hooks, and scoped rules.
+- [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) — skill for eliminating AI writing tells: banned phrases, structural clichés, sentence patterns. Installed as `stop-slop` skill.
 
 ## Installed Plugins
 
