@@ -28,6 +28,8 @@
 
 ## To Explore
 
+- [pbakaus/impeccable](https://github.com/pbakaus/impeccable) — frontend design skill that extends Anthropic's frontend-design with 7 reference files (OKLCH color, type scales, motion, interaction, responsive, UX writing) + 18 commands (/audit, /polish, /animate, etc.) + explicit anti-patterns (no Inter, no bounce easing, no cards-in-cards). Also includes a standalone CLI anti-pattern scanner. Replaces frontend-design if doing regular frontend work.
+
 - [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) — 13 context engineering skills: degradation patterns, compression, tool design, multi-agent patterns, memory systems, LLM-as-judge, etc. Content quality is solid and research-grounded.
 
 - [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) — 66 `DESIGN.md` files extracted from popular brand sites (Stripe, Linear, Vercel, Apple, etc.). Drop one in your project root and agents generate UI matching that brand's aesthetic. AI-generated summaries, not official tokens — useful for quick prototyping, not production specs.
