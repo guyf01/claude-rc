@@ -24,6 +24,16 @@
 - Save immediately without being asked: feedback when corrected/confirmed, user preferences, project context, and external references.
 - At the start of a session, check if relevant memories exist before diving in.
 
+## Context Management
+
+Every message includes the full conversation history — longer sessions mean more tokens processed per response, which affects cost and reasoning quality. Suggest `/compact` or starting a new session when:
+
+- A logical task completes and a new one is starting
+- The topic shifts significantly to a different domain
+- The conversation has been going long (15+ back-and-forths)
+
+Keep the suggestion brief and non-intrusive — one line is enough.
+
 ## Verification Before Done
 
 - Never mark a task complete without proving it works.
