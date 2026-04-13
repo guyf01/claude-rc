@@ -21,9 +21,7 @@
 
 ## Memory
 
-- A persistent memory system lives at `~/.claude/projects/<project>/memory/`. Save learnings there — don't wait to be asked.
-- Save: user preferences, feedback, project context, external references. See memory type definitions in the system prompt.
-- Update `MEMORY.md` index whenever you write a new memory file.
+- Save immediately without being asked: feedback when corrected/confirmed, user preferences, project context, and external references.
 - At the start of a session, check if relevant memories exist before diving in.
 
 ## Verification Before Done
