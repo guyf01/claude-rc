@@ -19,10 +19,18 @@
 - For complex problems, throw more compute at it — spin up subagents.
 - One task per subagent for focused execution.
 
-## Memory
+## Persistence
+
+### Memory
 
 - Save immediately without being asked: feedback when corrected/confirmed, user preferences, project context, and external references.
 - At the start of a session, check if relevant memories exist before diving in.
+
+### CLAUDE.md
+
+- Every project should have a `CLAUDE.md` at the root with stack, conventions, test commands, and what to avoid.
+- If missing, ask the user once: "There's no `CLAUDE.md` here. Want to run `/init`?"
+- If you learn something new about the project during a session (conventions, constraints, decisions), suggest updating `CLAUDE.md` to capture it — don't wait to be asked.
 
 ## Context Management
 
