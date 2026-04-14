@@ -32,6 +32,8 @@
 
 ## To Explore
 
+- [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) — methodology and toolset for turning any app with source code into an agent-controllable CLI. 7-phase automated pipeline (analyze → design → implement → test → document → publish) generates Click-based CLIs with REPL support and `--json` output. 23 pre-built harnesses for Blender, GIMP, LibreOffice, OBS, ComfyUI, etc. Drives real applications, not wrappers.
+
 - [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) — large Claude Code plugin with 47 subagents, 181 skills, 34 rules (language-specific for TS, Python, Go, Swift, PHP, Java), 20+ hooks, and MCP configs. Covers coding standards, TDD, security review, and framework-specific patterns across multiple languages. Cross-platform (Claude Code, Cursor, Codex, OpenCode).
 
 - [pbakaus/impeccable](https://github.com/pbakaus/impeccable) — frontend design skill that extends Anthropic's frontend-design with 7 reference files (OKLCH color, type scales, motion, interaction, responsive, UX writing) + 18 commands (/audit, /polish, /animate, etc.) + explicit anti-patterns (no Inter, no bounce easing, no cards-in-cards). Also includes a standalone CLI anti-pattern scanner. Replaces frontend-design if doing regular frontend work.
