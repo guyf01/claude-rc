@@ -40,6 +40,8 @@
 ## To Explore
 *Worth evaluating for future install or cherry-picking.*
 
+- [massgen/MassGen](https://github.com/massgen/MassGen) — 946 stars. Multi-agent scaling system that runs 40+ models across 10+ providers (Claude, GPT, Gemini, Grok, etc.) in parallel, each tackling the full problem independently, then voting and refining across cycles. 4 coordination modes (normal, planning, decomposition, checkpoint), MCP integration, computer use via Docker, live terminal/web UI. Install: `pip install massgen`. Caveats: early stage with breaking changes expected, not Claude Code-specific — standalone Python framework.
+
 - [anthropics/skills](https://github.com/anthropics/skills) — 117k stars. Anthropic's official skills collection: 17 skills across document creation (docx, pdf, pptx, xlsx), design (canvas-design, algorithmic-art, brand-guidelines, theme-factory), dev tools (claude-api, mcp-builder, web-artifacts-builder, webapp-testing), and communication (doc-coauthoring, internal-comms, slack-gif-creator). frontend-design and skill-creator already installed.
 
 - [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — automated persistent memory plugin for Claude Code. 5 lifecycle hooks capture tool usage and observations, compresses with AI summaries, stores in SQLite + Chroma vector DB, reinjects relevant context at session start. Natural language search via mem-search skill. Requires a worker service on port 37777.
