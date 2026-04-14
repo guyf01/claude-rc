@@ -46,6 +46,7 @@ Code shouldn't demand effort to read — it should tell a story.
 - If you're separating code blocks with empty lines and could give each block a name — that block is a function waiting to be extracted.
 - Blocks inside `if`, `else`, `while`, `try/catch` should ideally be function calls — this gives the logic a name that speaks for itself.
 - Fewer arguments is better — zero is ideal, three is a lot. When arguments pile up, they're telling you to pass the idea, not the pieces it's made of — group related ones into objects.
+- If a value can be derived from what the function already knows, or if every reasonable caller would pass the same thing, it's not an argument — it's an implementation detail leaking outward. Arguments should represent decisions the caller is actually in a position to make.
 - If you can't tell what a function receives and what it returns without reading the body, the name is wrong. The name, arguments, and return type together should tell the full story.
 
 ### Classes
