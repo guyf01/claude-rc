@@ -62,6 +62,8 @@
 
 - [tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph) — MCP server that builds a Tree-sitter AST + SQLite dependency graph of your codebase. Claude queries it automatically to get blast-radius context instead of loading whole files. 8.2x average token reduction, 49x on monorepos. 22 MCP tools: impact analysis, call graph traversal, dead code detection, refactoring previews. Installs via `pip install code-review-graph && code-review-graph install && code-review-graph build`. Requires Python 3.10+. Flow detection 33% recall outside Python but structural impact is solid across 19 languages.
 
+- [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) — self-hosted kanban + AI agent orchestration platform. Describe tasks on a board, agents execute in isolated git branch workspaces, review diffs inline with integrated browser + DevTools, then merge. Supports Claude Code, Codex, Gemini CLI, Copilot, and others. Runs via `npx vibe-kanban` or Docker. Rust backend, TypeScript/React frontend.
+
 - [devswarm.ai](https://devswarm.ai/) — spins up a full IDE per git worktree, each running its own AI agent (Claude Code, Codex, Gemini, Amazon Q, etc.) in parallel. Each agent gets isolated context, its own branch, and a dedicated editor pane — review and merge when done. Windows/Mac/Linux, bring your own API keys. Skipped: bundled VSCodium with no way to use your existing VS Code install.
 
 - [conductor.build](https://www.conductor.build/) — Mac app (YC-backed) for running teams of Claude Code/Codex agents in parallel isolated worktrees. GUI for reviewing/merging agent output, tight Linear + GitHub integration for context injection. Windows/Linux coming soon. Similar to cmux/ruflo but polished native app vs terminal primitives.
