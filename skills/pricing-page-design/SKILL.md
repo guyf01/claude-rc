@@ -24,7 +24,7 @@ Consider these zones for the pricing page. Not all are needed — skip any that 
 
 - **Not all products show prices** — for high-touch or custom-priced offerings, the card may show "Contact us" or "Request a quote" instead of a number.
 - **Price transparency** — when prices are shown, show the mandatory minimum price upfront. Optional add-ons and upgrades are presented during checkout. Never surprise the customer with mandatory costs at the end — that erodes trust.
-- **Lead with the best deal** — the first number the customer sees becomes the anchor. If there's an annual option, show it by default (it's the lower number). If there's a discount, show it prominently.
+- **Lead with the best deal** — the first number the customer sees becomes the anchor. If there's an annual option, show it by default (it's the lower number). If there's a discount, strike through the original price next to the real one — the higher number anchors perception and makes the deal feel like a steal.
 - **Smallest unit** — display the price in the smallest natural unit. "$22/seat/month, billed annually" feels smaller than "$264/seat/year." Break the price down to what feels most accessible.
 - **Frame savings** — always frame as saving. Use whichever number looks bigger — a percentage when the dollar amount is small, a dollar amount when the percentage looks small.
 - **Range and "starting at" pricing** — if the price varies by scope or configuration, show "starting at $X" or a range ("$5k–$15k"). Anchors the conversation without committing to a number that may not apply.
@@ -54,6 +54,7 @@ By default, a card's job is to present a distinct level of value. Style it as a 
 - **Target plan**
   - *Role:* the one you want most customers on.
   - *Visual:* visually elevated — stronger shadow, colored top border, "Most Popular" or "Recommended" badge, slightly more padding than siblings. If it's the middle tier, center-stage reinforces this naturally.
+  - *Psychology:* the "Most Popular" badge removes doubt for undecided users by giving them a socially validated "safe" choice. It doesn't need to be backed by real data — its job is to reduce decision paralysis, not report statistics. Use it on whichever plan you want to drive volume to.
 
 - **Free tier**
   - *Role:* present but de-emphasized. It's a stepping stone, not the destination.

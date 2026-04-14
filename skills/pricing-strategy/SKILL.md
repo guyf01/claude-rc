@@ -207,6 +207,10 @@ These aren't mutually exclusive — most products combine them. A higher tier ca
 - $29 not $30, $99 not $100. The left digit dominates perception. Only applies to fixed prices.
 - Match the format to the target customer: developers and consumers respond to charm pricing. Enterprise buyers and B2B procurement expect round numbers — round numbers signal premium and seriousness.
 
+### Manufactured Discounts
+
+Show a struck-through "original" price next to the real one to create anchoring — the discount doesn't have to be real. Works on price-sensitive audiences. Avoid with high-value customers — they see through it and it reads as cheap marketing.
+
 ### Price Ratios Between Tiers
 
 - Common pattern: 2x–3x price jump with 3x–5x value jump.
