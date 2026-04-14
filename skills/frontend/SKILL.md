@@ -186,6 +186,12 @@ Use for elevated containers that need to stand out — not for every card.
 - Always show loading states — skeleton screens or spinners. Never leave the user staring at nothing.
 - Never block the user — if they interact during a transition, the interaction wins.
 
+### Typing Indicators
+
+The brain attends to incoming social signals — seeing those dots triggers anticipation that locks attention until the payoff(response) arrives.
+
+Responses that appear too fast feel robotic. An artificial delay makes the result feel considered.
+
 ### Easing
 
 Match the curve to the direction of movement:
