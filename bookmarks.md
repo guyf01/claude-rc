@@ -1,21 +1,25 @@
 # Bookmarks
 
 ## Reference
+*Guides, indexes, and catalogs to browse when learning or discovering new tools. Read, don't install.*
 
 - [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — curated index of Claude Code skills, workflows, tooling, hooks, slash commands, CLAUDE.md files, status lines, and alternative clients. Pure reference — links with descriptions, no implementations in the repo itself.
 
 - [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 41.6k stars. Knowledge base curated from Boris Cherny (Claude Code creator) and Thariq posts. 69 tips, best practice guides for skills/hooks/MCP/subagents, workflows, and reports. Most current and authoritative Claude Code reference available.
 - [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) — comprehensive Claude Code learning guide. 10 modules covering skills, hooks, MCP, subagents, plugins, planning mode. Good reference when going deeper on any Claude Code feature.
 
-## Inspiration
 
-- [anthropics/skills](https://github.com/anthropics/skills) — Anthropic's official skills collection. Reviewed frontend-design.
+## Inspiration
+*Sources you've directly cherry-picked content from into your own config files.*
+
 - [UI/UX Pro Max](https://lobehub.com/skills/qdleader-qdleader-ui-ux-pro-max) — 50+ styles, 97 color palettes, 57 font pairings, 99 UX guidelines, 25 chart types. Fully cherry-picked into frontend.md.
 
 - [poshan0126/dotclaude](https://github.com/poshan0126/dotclaude) — lean, token-efficient `.claude/` config. Good reference for agent design, hooks, and scoped rules.
 - [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) — skill for eliminating AI writing tells: banned phrases, structural clichés, sentence patterns. Installed as `stop-slop` skill.
 
+
 ## Installed Plugins
+*Plugins currently active via `/plugin install`.*
 
 - [superpowers](https://github.com/claude-plugins-official/superpowers) — core workflow skills: brainstorming, planning, debugging, code review, TDD, subagents, git worktrees, verification
 - [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) — distinctive production-grade UI generation, avoids generic AI aesthetics
@@ -32,7 +36,11 @@
 - [wondelai/skills — ux-design](https://github.com/wondelai/skills) — refactoring-ui, ios-hig-design, ux-heuristics, hooked-ux, improve-retention, web-typography, top-design, design-everyday-things, lean-ux, microinteractions
 - [wondelai/skills — strategy-growth](https://github.com/wondelai/skills) — crossing-the-chasm, blue-ocean-strategy, traction-eos, obviously-awesome
 
+
 ## To Explore
+*Worth evaluating for future install or cherry-picking.*
+
+- [anthropics/skills](https://github.com/anthropics/skills) — 117k stars. Anthropic's official skills collection: 17 skills across document creation (docx, pdf, pptx, xlsx), design (canvas-design, algorithmic-art, brand-guidelines, theme-factory), dev tools (claude-api, mcp-builder, web-artifacts-builder, webapp-testing), and communication (doc-coauthoring, internal-comms, slack-gif-creator). frontend-design and skill-creator already installed.
 
 - [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — automated persistent memory plugin for Claude Code. 5 lifecycle hooks capture tool usage and observations, compresses with AI summaries, stores in SQLite + Chroma vector DB, reinjects relevant context at session start. Natural language search via mem-search skill. Requires a worker service on port 37777.
 
@@ -82,15 +90,11 @@
 - [coleam00/context-engineering-intro](https://github.com/coleam00/context-engineering-intro) — 13k stars. A Claude Code project template that enforces a structured feature request workflow before any code is written. You fill in INITIAL.md (what to build, code examples to follow, relevant docs, edge cases), then run `/generate-prp` to produce a detailed implementation plan, then `/execute-prp` to execute it with built-in validation. The key insight: most AI implementation failures are context failures, not model failures. Cloning this as a project starter gives you CLAUDE.md, the two slash commands, and an examples/ folder for code patterns. Similar to superpowers planning skills but more opinionated about input quality.
 - [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) — generates favicons, PWA/app icons, and OG social images via conversation. Framework-aware (Next.js, Astro). Requires Python + Pillow. Worth installing when bootstrapping web projects.
 
-- [anthropics/skills — canvas-design](https://github.com/anthropics/skills/tree/main/skills/canvas-design) — generates sophisticated visual art (PDF/PNG). Good for premium web backgrounds, hero section visuals, and decorative assets. Not for structured ad layouts or templated marketing materials.
-- [anthropics/skills — theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory) — 10 preset themes (colors + fonts) for styling slides, documents, and reports. Not for UI dev — only useful if generating polished artifacts through Claude.
 - [Figma MCP + Claude Code](https://github.com/figma/mcp-server-guide) — Figma ↔ Claude Code integration. Figma → production code with 1:1 fidelity, and code → editable Figma frames. Install via `/plugin install figma@claude-plugins-official`. Worth setting up if working with designers or doing client handoffs. Not needed for solo code-first workflow.
-
 
 - [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) — 40+ marketing skills: conversion optimization, copywriting, SEO, A/B testing, pricing, growth. Install via `/plugin marketplace add coreyhaines31/marketingskills`. Skip for coding-heavy periods — adds ~1,500 tokens always in context.
 - [HKUDS/OpenSpace](https://github.com/HKUDS/OpenSpace) — self-evolving AI agent framework. Skills improve from successful executions and sync to a community. MCP-based, plugs into Claude Code. Low effort to try — worth experimenting with.
 - [lobehub/lobehub](https://github.com/lobehub/lobehub) — self-hosted AI agent workspace. Multi-agent teams, persistent memory, 10,000+ MCP skills. Next.js/Docker. More of a productivity platform than a dev tool.
-
 
 - [expo/skills — building-native-ui](https://github.com/expo/skills/tree/main/plugins/expo/skills/building-native-ui) — Expo Router, native iOS UI patterns, animations. Relevant if/when doing native mobile (iOS/Android), not needed for web.
 - [vercel-labs/react-native-skills](https://lobehub.com/skills/vercel-labs-agent-skills-react-native-skills) — RN best practices across performance, animation, state, rendering, monorepo. ~Half applies to RN web (memoization, state, rendering rules). Other half is mobile-only. Cherry-pick rules into own rules/ rather than using as-is.
@@ -98,5 +102,6 @@
 - [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — 27.6k stars. Makes Claude talk like a caveman to cut output tokens ~65%. Viral meme with a real eval harness. The one useful piece: `caveman-compress` rewrites memory files to reduce session-start tokens ~46%.
 
 ## Ideas
+*Original ideas for skills or tools to build.*
 
 - **`/done` skill** — end-of-session forcing function. Summarize what was decided/discovered, write to CLAUDE.md and memory, then hand off to `finishing-a-development-branch` for git/worktree cleanup. Motivation: current memory rules are passive. 
