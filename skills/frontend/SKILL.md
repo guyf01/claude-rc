@@ -13,6 +13,10 @@ Never produce generic AI-looking output. Avoid safe, predictable choices. Every 
 
 Match implementation complexity to the aesthetic vision. Maximalist designs deserve elaborate code — layered effects, rich animations, dense interactions. Minimalist designs demand precision — exact spacing, careful typography, subtle details. Elegance comes from executing the vision well, not from a fixed level of effort.
 
+## Design Tokens
+
+Every visual property is a named decision. Tokens live in one place and everything else references them. See `references/design-tokens.md`.
+
 ## Responsive
 
 Mobile-first: design at 320px, enhance upward through breakpoints.
@@ -90,33 +94,12 @@ Reach for instead:
 - Technical: IBM Plex family, Source Sans 3
 - Distinctive: Bricolage Grotesque, Syne, Outfit, Plus Jakarta Sans
 
-### Scale
-
-Every font size is intentional — not arbitrary pixel values. Build a named scale:
-
-| Token | Use | Weight | Line Height |
-|-------|-----|--------|-------------|
-| display | Hero headlines, marketing | Bold | 1.1–1.2 |
-| heading | Section titles, page headers | Semibold | 1.2–1.3 |
-| body | Paragraphs, default text | Regular | 1.5–1.75 |
-| small | Captions, labels, meta | Regular/Medium | 1.4 |
-
-A hierarchy you can feel — each step must look clearly different from its neighbors.
-
 White text on dark backgrounds looks heavier than black text on white. Reduce font weight by one step to compensate.
 
 - Body text line height: 1.5–1.75.
 - Line length: 65–75 characters per line maximum.
 
 ## Color
-
-### Tokens
-
-Never use raw hex values in components. Build a semantic color system with one source of truth:
-
-- **Name by purpose, not value** — `--color-background`, `--color-surface`, `--color-brand`, `--color-success`, `--color-error`. Never `--color-blue-500` as a direct reference.
-- **Primary scale** — 9 shades from dark to light for the brand color. Each shade maps to a purpose: darkest for text on light backgrounds, mid-range for interactive states, lightest for tinted backgrounds.
-- **Semantic tokens reference scale tokens** — components consume `--color-brand`, not `--color-blue-500`. Rebrand means changing one value, not hunting hex values.
 
 ### 60/30/10 Rule
 
@@ -158,7 +141,6 @@ Build every component against all states — not just the happy path. Components
 
 ## Layout
 
-- Pick a base spacing unit (4px) and make every margin, padding, and gap a multiple — 4, 8, 12, 16, 24, 32, 48, 64. Arbitrary values make layouts feel random. Multiples make them feel intentional.
 - Whitespace is a design element.
 - Break predictable grids — asymmetry, overlapping elements, and diagonal flow create visual interest.
 - Commit to either generous negative space or controlled density. Never land in the middle.
@@ -211,18 +193,6 @@ Match the curve to the direction of movement:
 - **ease-out** — enter/appear. Starts fast, decelerates to rest. Content arriving feels natural.
 - **ease-in** — exit/leave. Starts slow, accelerates out. Gets out of the way cleanly.
 - **ease-in-out** — move/resize. Smooth on both ends. For elements repositioning within the view.
-
-### Duration
-
-Match duration to the weight of the interaction:
-
-| Scale | Duration | Use |
-|-------|----------|-----|
-| Micro | 100ms | Hover state, toggle |
-| Small | 200ms | Button press, icon swap |
-| Medium | 300ms | Modal, dropdown, tooltip |
-| Large | 400ms | Page transition, drawer |
-| XL | 500ms | Complex multi-step |
 
 ## Premium Popup
 
