@@ -83,7 +83,11 @@ Names must be intention-revealing, pronounceable, and searchable. A name should 
 - Constants: `SCREAMING_SNAKE` — `MAX_RETRIES`, `API_BASE_URL`.
 - Abbreviations: only universally known (`id`, `url`, `api`, `db`, `config`, `auth`). Acronyms as words: `userId` not `userID`.
 
-**Meaningful distinctions:** Names must reflect actual differences in behavior or purpose — not just exist to satisfy the compiler. `userData` vs `userInfo` vs `userDetails` are not distinctions; they're noise. If two things have different names, they must do different things. If they do the same thing, pick one name and use it everywhere.
+**Meaningful distinctions:** Different names must mean different things. `userData` vs `userInfo` vs `userDetails` — if there's no behavioral difference, pick one and delete the others.
+
+**No disinformation:** A name that implies the wrong type is worse than a vague one — it actively lies. `userList` must be a list. `isComplete` must be a boolean. `userCount` must be a number. The name and the thing must agree.
+
+**Similar long names:** Avoid names that differ only in minor ways — `getActiveUserData` vs `getActiveUserInfo`, `settingsMap` vs `settingsObj`. Subtle variation at the end of a long name is easy to miss and hard to distinguish at a glance. If the difference matters, make it prominent.
 
 ### Variables
 
