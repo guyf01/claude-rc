@@ -32,6 +32,8 @@
 
 ## To Explore
 
+- [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) — large Claude Code plugin with 47 subagents, 181 skills, 34 rules (language-specific for TS, Python, Go, Swift, PHP, Java), 20+ hooks, and MCP configs. Covers coding standards, TDD, security review, and framework-specific patterns across multiple languages. Cross-platform (Claude Code, Cursor, Codex, OpenCode).
+
 - [pbakaus/impeccable](https://github.com/pbakaus/impeccable) — frontend design skill that extends Anthropic's frontend-design with 7 reference files (OKLCH color, type scales, motion, interaction, responsive, UX writing) + 18 commands (/audit, /polish, /animate, etc.) + explicit anti-patterns (no Inter, no bounce easing, no cards-in-cards). Also includes a standalone CLI anti-pattern scanner. Replaces frontend-design if doing regular frontend work.
 
 - [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) — 13 context engineering skills: degradation patterns, compression, tool design, multi-agent patterns, memory systems, LLM-as-judge, etc. Content quality is solid and research-grounded.
