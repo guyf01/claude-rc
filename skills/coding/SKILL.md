@@ -45,6 +45,7 @@ A source file should read like a newspaper — the big picture first, details be
 Code shouldn't demand effort to read — it should tell a story.
 
 - Single responsibility — each function does one thing.
+- Two tests for single responsibility: (1) if you can label chunks of the body with different names, each chunk is a separate function waiting to be extracted; (2) if you can extract a sub-function whose name is not merely a restatement of its implementation, that extraction is real — the responsibility was already there, hiding.
 - Don't mix different operations or levels of abstraction in one function.
 - One level of abstraction per function — the reader should understand what the code does without understanding how it does it.
 - If you're separating code blocks with empty lines and could give each block a name — that block is a function waiting to be extracted.
