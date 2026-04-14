@@ -40,6 +40,10 @@
 ## To Explore
 *Worth evaluating for future install or cherry-picking.*
 
+- [agamm/claude-code-owasp](https://github.com/agamm/claude-code-owasp) — 125 stars. Claude Code skill that bakes OWASP security into context: OWASP Top 10:2025, ASVS 5.0 verification requirements, safe/unsafe code pattern examples, input/auth/access control checklists, agentic AI risks (ASI01-ASI10), and language-specific guidance for 20+ languages. Auto-activates on security-related tasks. Potentially overlaps with security-guidance plugin — check before installing.
+
+- [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) — 23.9k stars. 5 skills for Obsidian vault interaction: obsidian-markdown (wikilinks, embeds, callouts), obsidian-bases (views, filters, formulas), json-canvas (node/edge canvas files), obsidian-cli (vault CLI), and defuddle (strips web pages to clean markdown — useful outside Obsidian for token reduction). From kepano, Obsidian's Minimal theme creator. Only relevant if using Obsidian; defuddle is the one skill worth cherry-picking standalone.
+
 - [massgen/MassGen](https://github.com/massgen/MassGen) — 946 stars. Multi-agent scaling system that runs 40+ models across 10+ providers (Claude, GPT, Gemini, Grok, etc.) in parallel, each tackling the full problem independently, then voting and refining across cycles. 4 coordination modes (normal, planning, decomposition, checkpoint), MCP integration, computer use via Docker, live terminal/web UI. Install: `pip install massgen`. Caveats: early stage with breaking changes expected, not Claude Code-specific — standalone Python framework.
 
 - [anthropics/skills](https://github.com/anthropics/skills) — 117k stars. Anthropic's official skills collection: 17 skills across document creation (docx, pdf, pptx, xlsx), design (canvas-design, algorithmic-art, brand-guidelines, theme-factory), dev tools (claude-api, mcp-builder, web-artifacts-builder, webapp-testing), and communication (doc-coauthoring, internal-comms, slack-gif-creator). frontend-design and skill-creator already installed.
