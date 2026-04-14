@@ -79,6 +79,8 @@
 - [expo/skills — building-native-ui](https://github.com/expo/skills/tree/main/plugins/expo/skills/building-native-ui) — Expo Router, native iOS UI patterns, animations. Relevant if/when doing native mobile (iOS/Android), not needed for web.
 - [vercel-labs/react-native-skills](https://lobehub.com/skills/vercel-labs-agent-skills-react-native-skills) — RN best practices across performance, animation, state, rendering, monorepo. ~Half applies to RN web (memoization, state, rendering rules). Other half is mobile-only. Cherry-pick rules into own rules/ rather than using as-is.
 
+- [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — 27.6k stars. Makes Claude talk like a caveman to cut output tokens ~65%. Viral meme with a real eval harness. The one useful piece: `caveman-compress` rewrites memory files to reduce session-start tokens ~46%.
+
 ## Ideas
 
 - **`/done` skill** — end-of-session forcing function. Summarize what was decided/discovered, write to CLAUDE.md and memory, then hand off to `finishing-a-development-branch` for git/worktree cleanup. Motivation: current memory rules are passive. 
