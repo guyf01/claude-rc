@@ -28,7 +28,11 @@ Don't band-aid a broken design, but don't rewrite working code for aesthetics ei
 
 ### File Layout
 
-- Public functions first, then private helpers in call order. Top-to-bottom reads as a story.
+A source file should read like a newspaper — the big picture first, details below.
+
+- **Top-level function first.** The entry point sits at the top. Its body is high-level orchestration: function calls and variable names that read like plain English, explaining exactly what happens without revealing how.
+- **Call order.** Supporting functions appear in the order they are called from above — so the file reads as one continuous flow, top to bottom, from high-level concepts down to low-level details.
+- **Conceptual affinity.** Group functions that belong together. Shared utilities cluster at the bottom, organized by purpose. The result: big picture at the top, supporting functions flowing downward, utilities at the base.
 
 ### Structure
 
