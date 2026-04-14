@@ -2,6 +2,8 @@
 
 ## Reference
 
+- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — curated index of Claude Code skills, workflows, tooling, hooks, slash commands, CLAUDE.md files, status lines, and alternative clients. Pure reference — links with descriptions, no implementations in the repo itself.
+
 - [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 41.6k stars. Knowledge base curated from Boris Cherny (Claude Code creator) and Thariq posts. 69 tips, best practice guides for skills/hooks/MCP/subagents, workflows, and reports. Most current and authoritative Claude Code reference available.
 - [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) — comprehensive Claude Code learning guide. 10 modules covering skills, hooks, MCP, subagents, plugins, planning mode. Good reference when going deeper on any Claude Code feature.
 
