@@ -97,6 +97,20 @@ White text on dark backgrounds looks heavier than black text on white. Reduce fo
 
 ## Color
 
+### 60/30/10 Rule
+
+- **60% — background**: the dominant surface color that sets the overall tone.
+- **30% — secondary**: same hue as the background, slightly lighter (dark themes) or slightly darker (light themes). Used for cards, navs, containers, and secondary surfaces.
+- **10% — accent**: bold, warm color reserved exclusively for CTAs and key actions. Warm tones (amber, orange, red-adjacent) maximize contrast and draw the eye — never dilute by using them decoratively.
+
+### Gradients
+
+- Stay within 60 degrees of the color wheel — adjacent hues blend naturally; hues far apart clash and create visual noise.
+- Angle: `135deg` as the default.
+- Gradient on text: headlines only. Keep body text solid — gradients on small text destroy readability.
+
+### General
+
 - Use CSS variables for all colors — never hardcode hex values scattered across the codebase.
 - Dominant color with sharp accents beats evenly-distributed palettes.
 - Dark themes: never pure `#000` — use near-blacks like `#0a0a0a`, `#111`, `#1a1a2e`.
