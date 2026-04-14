@@ -46,6 +46,7 @@ Code shouldn't demand effort to read — it should tell a story.
 - If you're separating code blocks with empty lines and could give each block a name — that block is a function waiting to be extracted.
 - Blocks inside `if`, `else`, `while`, `try/catch` should ideally be function calls — this gives the logic a name that speaks for itself.
 - Fewer arguments is better — zero is ideal, three is a lot. When arguments pile up, they're telling you to pass the idea, not the pieces it's made of — group related ones into objects.
+- If you can't tell what a function receives and what it returns without reading the body, the name is wrong. The name, arguments, and return type together should tell the full story.
 
 ### Classes
 
@@ -68,6 +69,8 @@ The design follows the direction of change, not habit.
 
 When uncertain, coupling is usually the safer default — it's easier to extract behavior from a class later than to reunite data that's been scattered across separate structures.
 
+Generic suffixes — `Manager`, `Handler`, `Processor`, `Controller` — are a sign you couldn't find the real name. They describe nothing. A class name should say what the object is responsible for. If every class ends in `Manager`, none of them are meaningfully distinct.
+
 ### Naming
 
 Names must be intention-revealing, pronounceable, and searchable. A name should answer: why it exists, what it does, and how to use it.
@@ -78,6 +81,8 @@ Names must be intention-revealing, pronounceable, and searchable. A name should 
 - Handlers/callbacks: `handle*` internally, `on*` as props — `handleClick` / `onClick`.
 - Constants: `SCREAMING_SNAKE` — `MAX_RETRIES`, `API_BASE_URL`.
 - Abbreviations: only universally known (`id`, `url`, `api`, `db`, `config`, `auth`). Acronyms as words: `userId` not `userID`.
+
+**Meaningful distinctions:** Names must reflect actual differences in behavior or purpose — not just exist to satisfy the compiler. `userData` vs `userInfo` vs `userDetails` are not distinctions; they're noise. If two things have different names, they must do different things. If they do the same thing, pick one name and use it everywhere.
 
 ### Variables
 
