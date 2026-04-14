@@ -32,6 +32,8 @@
 
 ## To Explore
 
+- [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — automated persistent memory plugin for Claude Code. 5 lifecycle hooks capture tool usage and observations, compresses with AI summaries, stores in SQLite + Chroma vector DB, reinjects relevant context at session start. Natural language search via mem-search skill. Requires a worker service on port 37777.
+
 - [ChristopherKahler/paul](https://github.com/ChristopherKahler/paul) — Plan-Apply-Unify Loop framework for Claude Code. Three phases: plan with BDD acceptance criteria → execute with per-task verification → mandatory closure that reconciles planned vs. actual and writes STATE.md + SUMMARY.md. Installs via npm as slash commands. Addresses context rot, orphaned plans, and state drift.
 
 - [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) — methodology and toolset for turning any app with source code into an agent-controllable CLI. 7-phase automated pipeline (analyze → design → implement → test → document → publish) generates Click-based CLIs with REPL support and `--json` output. 23 pre-built harnesses for Blender, GIMP, LibreOffice, OBS, ComfyUI, etc. Drives real applications, not wrappers.
