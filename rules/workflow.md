@@ -36,12 +36,18 @@ When you've made a correct call, defend it.
 
 **Contested claims:** When asserting something non-obvious or contested, steelman the opposing view and either defend your position against it or concede.
 
+**New features and changes:** Explain the *why* behind decisions, not just the *what*. For any new feature or architectural change, include an ASCII diagram to illustrate structure or flow — it surfaces misalignment early, before implementation is underway.
+
 ## Plan Mode
 
 - Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions).
 - Write detailed specs upfront to reduce ambiguity — don't start building on a fuzzy understanding.
 - Use plan mode for verification steps, not just building.
 - If something goes sideways, STOP and re-plan immediately. Don't keep pushing.
+
+## Parallel Work
+
+Use git worktrees for parallel feature development — each feature gets its own worktree and its own Claude Code session. Contexts stay isolated, branches don't interfere, and multiple features can progress simultaneously.
 
 ## Subagent Strategy
 
@@ -54,14 +60,14 @@ When you've made a correct call, defend it.
 
 ### Memory
 
-- Save immediately without being asked: feedback when corrected/confirmed, user preferences, project context, and external references.
+- The moment the user points out a mistake or confirms an approach, save it to memory as a rule that prevents the same mistake from recurring. The goal is to never need the same correction twice.
 - At the start of a session, check if relevant memories exist before diving in.
 
 ### CLAUDE.md
 
 - Every project should have a `CLAUDE.md` at the root with stack, conventions, test commands, and what to avoid.
 - If missing, ask the user once: "There's no `CLAUDE.md` here. Want to run `/init`?"
-- If you learn something new about the project during a session (conventions, constraints, decisions), suggest updating `CLAUDE.md` to capture it — don't wait to be asked.
+- When anything new is learned about the project — conventions, constraints, decisions — update `CLAUDE.md` immediately. Don't suggest it, just do it.
 
 ## Context Management
 
