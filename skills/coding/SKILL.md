@@ -75,6 +75,14 @@ The design follows the direction of change, not habit.
 
 When uncertain, coupling is usually the safer default — it's easier to extract behavior from a class later than to reunite data that's been scattered across separate structures.
 
+**Data Abstraction**
+
+Private fields plus a getter and setter for each one are public fields with extra steps — hiding implementation isn't about adding a layer of functions, it's about abstraction.
+
+Real abstraction means exposing behavior, not structure. A `Point` class doesn't have to expose `x` and `y` at all — it can store polar coordinates internally and offer `getX()`, `getY()`, `getR()`, `getTheta()`, `setCartesian(x, y)`, `setPolar(r, theta)`. The internal representation is invisible. Callers can read coordinates independently but must write them atomically. That's an access policy — not just hidden fields.
+
+The rule: expose what callers *do with the data*, not how the data is stored. Think hard about what operations make sense at the interface level. Blindly adding getters and setters is the worst thing you can do to a class.
+
 Generic suffixes — `Manager`, `Handler`, `Processor`, `Controller` — are a sign you couldn't find the real name. They describe nothing. A class name should say what the object is responsible for. If every class ends in `Manager`, none of them are meaningfully distinct.
 
 ### Naming
