@@ -99,6 +99,15 @@ White text on dark backgrounds looks heavier than black text on white. Reduce fo
 - Body text line height: 1.5–1.75.
 - Line length: 65–75 characters per line maximum.
 
+### Type Scale
+
+- Headline must be at least 2× the size of body text. Not 1.4×, not 1.6×. 2×.
+- Use exactly 3 weights: 800 for headings, 400 for body, 300 for supporting/small text. Weight alone creates reading order — more weights create noise, not nuance.
+
+### Contrast & Hierarchy
+
+Light text on dark, bold headings next to light body text. The bigger the difference between two elements, the clearer the hierarchy. Commit to the contrast — don't hedge.
+
 ## Color
 
 ### 60/30/10 Rule
@@ -106,6 +115,8 @@ White text on dark backgrounds looks heavier than black text on white. Reduce fo
 - **60% — background**: the dominant surface color that sets the overall tone.
 - **30% — secondary**: same hue as the background, slightly lighter (dark themes) or slightly darker (light themes). Used for cards, navs, containers, and secondary surfaces.
 - **10% — accent**: bold, warm color reserved exclusively for CTAs and key actions. Warm tones (amber, orange, red-adjacent) maximize contrast and draw the eye — never dilute by using them decoratively.
+
+Pick **one** accent color and use it only where you want the eye to land — buttons, links, key numbers, key words. Everything else neutral. Spreading accent color kills its power.
 
 ### Gradients
 
@@ -141,7 +152,7 @@ Build every component against all states — not just the happy path. Components
 
 ## Layout
 
-- Whitespace is a design element.
+- White space is intentional, not empty. Double the padding around important elements — space signals importance.
 - Break predictable grids — asymmetry, overlapping elements, and diagonal flow create visual interest.
 - Commit to either generous negative space or controlled density. Never land in the middle.
 - Always include `<meta name="viewport" content="width=device-width, initial-scale=1">`.
