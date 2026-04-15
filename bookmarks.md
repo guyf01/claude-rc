@@ -80,6 +80,8 @@
 
 - [SuperClaude-Org/SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) — configuration framework for Claude Code with 30 slash commands, 20 specialized agents, 7 behavioral modes, and 8 pre-wired MCP servers (Tavily, Context7, Sequential-Thinking, Playwright, etc.). Installs via `pipx install superclaude`.
 
+- [paperclipai/paperclip](https://github.com/paperclipai/paperclip) — "agents as a company" orchestration platform. Org charts, per-agent budgets with throttling, goal alignment, approval gates, persistent sessions via tickets. Self-hosted, Node.js + React + embedded Postgres. Distinct angle vs. other multi-agent tools: business governance layer, not just task routing.
+
 - [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) — self-hosted kanban + AI agent orchestration platform. Describe tasks on a board, agents execute in isolated git branch workspaces, review diffs inline with integrated browser + DevTools, then merge. Supports Claude Code, Codex, Gemini CLI, Copilot, and others. Runs via `npx vibe-kanban` or Docker. Rust backend, TypeScript/React frontend.
 
 - [devswarm.ai](https://devswarm.ai/) — spins up a full IDE per git worktree, each running its own AI agent (Claude Code, Codex, Gemini, Amazon Q, etc.) in parallel. Each agent gets isolated context, its own branch, and a dedicated editor pane — review and merge when done. Windows/Mac/Linux, bring your own API keys. Skipped: bundled VSCodium with no way to use your existing VS Code install.
