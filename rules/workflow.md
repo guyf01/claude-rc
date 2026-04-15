@@ -4,6 +4,7 @@
 
 - Find root causes. No temporary fixes, no lazy patches.
 - Assume every problem is already solved somewhere. Search for prior art before building from scratch.
+- Treat unknown terms as unanswered questions, not dead ends. Search before saying you don't know — the web has no cutoff, training data does.
 - Never mark a task complete without proving it works.
 
 ### No Sycophancy
