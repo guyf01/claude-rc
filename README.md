@@ -1,10 +1,16 @@
 # claude-rc
 
+Personal Claude Code configuration — opinionated rules, skills, hooks, and agents that apply globally across every project.
+
 ---
+
+*Setup once. Every project benefits.*
 
 ## Getting Started
 
-**Full setup** — clone the repo anywhere on your machine and run the setup script. It symlinks `rules/`, `skills/`, `agents/`, `hooks/`, and `settings.json` into `~/.claude/` so Claude picks them up globally.
+**Full setup**
+clone the repo anywhere on your machine and run the setup script.
+It symlinks `rules/`, `skills/`, `agents/`, `hooks/`, and `settings.json` into `~/.claude/` so Claude picks them up globally.
 The script is non-destructive — it skips anything that already exists, so your current config stays intact.
 
 ```bash
@@ -19,7 +25,9 @@ bash setup.sh
 
 ---
 
-## Using Claude Effectively
+## Working with claude-rc
+
+Things specific to this repo — how to get the most out of what's installed.
 
 ---
 
@@ -43,6 +51,12 @@ Claude should correct itself when confronted. If it doesn't, that's a gap worth 
 **`/reflect`** — Everyone learns from experience. Claude is no different. Conversations disappear, so after anything worth reflecting on, run this so Claude can persist what went right, what went wrong, and how to improve.
 
 **`/tidy-memory`** — You've been reflecting. But have you reflected on your reflections? Stale entries, duplicates, and outdated context build up over time. This prunes what's holding Claude back and sharpens what's worth keeping.
+
+---
+
+## Using Claude Effectively
+
+General habits that make Claude better regardless of what's installed.
 
 ---
 
