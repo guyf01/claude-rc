@@ -4,9 +4,11 @@
 
 ## A sharper Claude. Every project, every session.
 
-Rules to keep it honest. Skills to keep it sharp. Configured once. Active everywhere.  
+Rules to keep it honest. Skills to keep it sharp. Configured once. Active everywhere.
 
 </div>
+
+<br>
 
 ## Setup Guide
 
@@ -26,14 +28,18 @@ bash setup.sh
 ```
 
 > [!NOTE]
-> **Windows:** symlinks require Developer Mode (`Settings → System → For developers`).  Enable it before running the script.
+> **Windows:** symlinks require Developer Mode (`Settings → System → For developers`).  
+Enable it before running the script.
 
+<br>
 ---
 <br>
 
 ## Working with claude-rc
 
-Things specific to this repo — how to get the most out of what's installed.  
+Things specific to this repo — how to get the most out of what's installed.
+
+<br>
 
 ### About the Rules Folder
 
@@ -56,8 +62,8 @@ Claude should correct itself when confronted. If it doesn't, that's a gap worth 
 
 **`/tidy-memory`** — You've been reflecting. But have you reflected on your reflections? Stale entries, duplicates, and outdated context build up over time. This prunes what's holding Claude back and sharpens what's worth keeping.
 
+<br>
 ---
-
 <br>
 
 ## Using Claude Effectively
