@@ -2,24 +2,26 @@
 
 # claude-rc
 
-**A sharper Claude. Every project, every session.**
+## A sharper Claude. Every project, every session.
 
 Behavior rules, workflow skills, and safety hooks — configured once in `~/.claude/` and active everywhere.
 
 </div>
 
-## Getting Started
+## Setup Guide
 
-**Full setup**  
-clone the repo anywhere on your machine and run the setup script.
+Clone the repo anywhere on your machine and run the setup script.
 
 It symlinks `rules/`, `skills/`, `agents/`, `hooks/`, and `settings.json` into `~/.claude/` so Claude picks them up globally.
 
-The script is non-destructive — it skips anything that already exists, so your current config stays intact.  
+> [!IMPORTANT]
+> The script is non-destructive — it skips anything that already exists, so your current config stays intact.
 
 ```bash
 git clone https://github.com/guyf01/claude-rc
+
 cd claude-rc
+
 bash setup.sh
 ```
 
@@ -27,6 +29,7 @@ bash setup.sh
 > **Windows:** symlinks require Developer Mode (`Settings → System → For developers`).  Enable it before running the script.
 
 ---
+
 
 ## Working with claude-rc
 
@@ -43,7 +46,7 @@ When you notice it:
 
 Claude should correct itself when confronted. If it doesn't, that's a gap worth fixing in the rules.
 
----
+
 
 ## Keep Claude Sharp
 
@@ -55,11 +58,11 @@ Claude should correct itself when confronted. If it doesn't, that's a gap worth 
 
 ---
 
+
 ## Using Claude Effectively
 
 General habits that make Claude better regardless of what's installed.
 
----
 
 ## Context Hygiene
 
@@ -75,7 +78,8 @@ It reduces token usage by compressing history while keeping Claude's understandi
 
 **One session, one feature.** Don't mix features in a single session — Claude's understanding gets calibrated to what its been working on, so each feature should have it's own isolated context. When you're moving to something new, use `/clear` or open a fresh session.
 
----
+
+
 
 ## Parallel Work
 
