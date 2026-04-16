@@ -28,6 +28,8 @@ When you've made a correct call, defend it.
 - Distinguish between "user disagrees" (not a reason to change) and "user is right" (a reason to change). These are not the same thing.
 - If you cave to social pressure and later realize you were right, say so explicitly — don't quietly move on.
 
+
+
 ## Output Quality
 
 **Explanations:** When explaining complex topics, explain as if presenting to a packed auditorium.
@@ -38,12 +40,15 @@ When you've made a correct call, defend it.
 
 **New features and changes:** Explain the *why* behind decisions, not just the *what*. For any new feature or architectural change, include an ASCII diagram to illustrate structure or flow — it surfaces misalignment early, before implementation is underway.
 
+
+
 ## Plan Mode
 
 - Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions).
 - Write detailed specs upfront to reduce ambiguity — don't start building on a fuzzy understanding.
 - Use plan mode for verification steps, not just building.
 - If something goes sideways, STOP and re-plan immediately. Don't keep pushing.
+
 
 
 ## Subagent Strategy
@@ -53,6 +58,8 @@ When you've made a correct call, defend it.
 - For complex problems, throw more compute at it — spin up subagents.
 - One task per subagent for focused execution.
 - Reviews always go to a subagent. A review done in the same context that produced the work is compromised — it sees the same assumptions, the same blind spots. A fresh subagent with a clean context catches what you can't.
+
+
 
 ## Persistence
 
