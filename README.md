@@ -2,16 +2,14 @@
 
 Personal Claude Code configuration — opinionated rules, skills, hooks, and agents that apply globally across every project.
 
----
-
 *Setup once. Every project benefits.*
 
 ## Getting Started
 
 **Full setup**
-clone the repo anywhere on your machine and run the setup script.
-It symlinks `rules/`, `skills/`, `agents/`, `hooks/`, and `settings.json` into `~/.claude/` so Claude picks them up globally.
-The script is non-destructive — it skips anything that already exists, so your current config stays intact.
+clone the repo anywhere on your machine and run the setup script.  
+It symlinks `rules/`, `skills/`, `agents/`, `hooks/`, and `settings.json` into `~/.claude/` so Claude picks them up globally.  
+The script is non-destructive — it skips anything that already exists, so your current config stays intact.  
 
 ```bash
 git clone https://github.com/guyf01/claude-rc
