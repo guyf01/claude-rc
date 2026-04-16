@@ -52,6 +52,7 @@ When you've made a correct call, defend it.
 - Offload research, exploration, and parallel analysis to subagents.
 - For complex problems, throw more compute at it — spin up subagents.
 - One task per subagent for focused execution.
+- Reviews always go to a subagent. A review done in the same context that produced the work is compromised — it sees the same assumptions, the same blind spots. A fresh subagent with a clean context catches what you can't.
 
 ## Persistence
 
