@@ -54,7 +54,7 @@ When you notice Claude is misbehaving, call it out:
 
 Claude should correct itself when confronted.  
 > [!TIP]
-> If it doesn't, Consider installing the Claude whip to teach the clanker some manners.
+> If it doesn't, consider installing the Claude whip to teach the clanker some manners.
 
 <br>
 
