@@ -13,6 +13,16 @@ Claude should correct itself when confronted. If it doesn't, that's a gap worth 
 
 ---
 
+## Keep Claude Sharp
+
+**`/find-tools`** — Give me six hours to chop down a tree and I will spend the first four sharpening the axe. Starting something new and not sure what's available? Before starting anything new, run this to find the right skill for the job. 
+
+**`/reflect`** — Everyone learns from experience. Claude is no different. Conversations disappear, so after anything worth reflecting on, run this so Claude can persist what went right, what went wrong, and how to improve.
+
+**`/tidy-memory`** — You've been reflecting. But have you reflected on your reflections? Stale entries, duplicates, and outdated context build up over time. This prunes what's holding Claude back and sharpens what's worth keeping.
+
+---
+
 ## Context Hygiene
 
 Claude re-reads the full conversation history on every message. Longer sessions cost more and degrade reasoning quality. A few habits that help:
