@@ -26,7 +26,8 @@ bash setup.sh
 ```
 
 > [!NOTE]
-> **Windows:** symlinks require Developer Mode (`Settings → System → For developers`).  
+> **Windows:**  
+symlinks require Developer Mode (`Settings → System → For developers`).  
 Enable it before running the script.
 
 <br>
@@ -37,36 +38,37 @@ Enable it before running the script.
 
 ## Working with claude-rc
 
-How to get the most out of what's installed.
+How to get the most out of this repository.
 
 ### About the Rules Folder
 
-Everything in `rules/` is an instruction for Claude.  
+Everything in `rules/` are passive instructions loaded at the start of every session for Claude.  
 Read and understand it, those rules define how Claude is **supposed** to behave across all sessions.
 
 > [!WARNING]
 >Rules are not enforced, Claude might not follow them in practice.  
 
-When you notice claude is miss behaving, call it out:
+When you notice claude is misbehaving, call it out:
 - *"you violated some of your rules"* — Claude should check and self-correct.
 - *"you're supposed to search before answering, why didn't you?"*
 
-Claude should correct itself when confronted. If it doesn't, Consider installing the claude whip to teach the clanker some manners.
+Claude should correct itself when confronted.  
+If it doesn't, Consider installing the claude whip to teach the clanker some manners.
 
 <br>
 
 ### Keep Claude Sharp
 
-**`/find-tools`**  
+#### /find-tools  
 Give me six hours to chop down a tree and I will spend the first four sharpening the axe.  
 Starting something new and not sure what's available?  
 Before starting anything new, run this to find the right skill for the job. 
 
-**`/reflect`**  
+#### /reflect  
 Everyone learns from experience. Claude is no different.  
 Sessions disappear, so after anything worth reflecting on, run this so Claude can persist what went right, what went wrong, and how to improve.
 
-**`/tidy-memory`**  
+#### /tidy-memory  
 You've been reflecting. But have you reflected on your reflections?  
 Stale entries, duplicates, and outdated context build up over time.  
 This prunes what's holding Claude back and sharpens what's worth keeping.
