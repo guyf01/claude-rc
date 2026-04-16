@@ -4,7 +4,7 @@
 
 ## A sharper Claude. Every project, every session.
 
-Rules that keep it honest. Skills that keep it sharp. Configured once. Active everywhere.
+Rules to keep it honest. Skills to keep it sharp. Configured once. Active everywhere.
 
 </div>
 
