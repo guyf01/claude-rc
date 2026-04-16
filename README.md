@@ -1,8 +1,12 @@
+<div align="center">
+
 # claude-rc
 
-Personal Claude Code configuration — opinionated rules, skills, hooks, and agents that apply globally across every project.
+**A sharper Claude. Every project, every session.**
 
-*Setup once. Every project benefits.*
+Behavior rules, workflow skills, and safety hooks — configured once in `~/.claude/` and active everywhere.
+
+</div>
 
 ## Getting Started
 
