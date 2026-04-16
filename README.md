@@ -7,9 +7,11 @@ Personal Claude Code configuration — opinionated rules, skills, hooks, and age
 ## Getting Started
 
 **Full setup**  
-clone the repo anywhere on your machine and run the setup script.  
-> It symlinks `rules/`, `skills/`, `agents/`, `hooks/`, and `settings.json` into `~/.claude/` so Claude picks them up globally.  
-> The script is non-destructive — it skips anything that already exists, so your current config stays intact.  
+clone the repo anywhere on your machine and run the setup script.
+
+It symlinks `rules/`, `skills/`, `agents/`, `hooks/`, and `settings.json` into `~/.claude/` so Claude picks them up globally.
+
+The script is non-destructive — it skips anything that already exists, so your current config stays intact.  
 
 ```bash
 git clone https://github.com/guyf01/claude-rc
@@ -17,17 +19,16 @@ cd claude-rc
 bash setup.sh
 ```
 
+> [!NOTE]
 > **Windows:** symlinks require Developer Mode (`Settings → System → For developers`). Enable it before running the script.
 
-> **Prerequisites:** `bash`, `git`, `jq` (required by the hooks — `brew install jq` / `apt install jq` / [jq releases](https://jqlang.github.io/jq/download/)).
+**Prerequisites:** `bash`, `git`, `jq` — install jq with `brew install jq` or `apt install jq`.
 
 ---
 
 ## Working with claude-rc
 
 Things specific to this repo — how to get the most out of what's installed.
-
----
 
 ## About the Rules Folder
 
