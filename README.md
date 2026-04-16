@@ -27,7 +27,7 @@ bash setup.sh
 
 > [!NOTE]
 > **Windows:**  
-symlinks require Developer Mode (`Settings → System → For developers`).
+Symlinks require Developer Mode (`Settings → System → For developers`).
 
 <br>
 
@@ -48,13 +48,13 @@ Read and understand them, those rules define how Claude is **supposed** to behav
 > [!WARNING]
 >Rules are automatically loaded, but not enforced. Claude might deviate from them in practice.  
 
-When you notice claude is misbehaving, call it out:
+When you notice Claude is misbehaving, call it out:
 - *"you violated some of your rules"*
 - *"you're supposed to search before answering, why didn't you?"*
 
 Claude should correct itself when confronted.  
 > [!TIP]
-> If it doesn't, Consider installing the claude whip to teach the clanker some manners.
+> If it doesn't, Consider installing the Claude whip to teach the clanker some manners.
 
 <br>
 
@@ -67,7 +67,7 @@ Before starting anything new, run this to find the right skill for the job.
 
 #### /reflect
 *"Everyone learns from experience. Claude is no different."*  
-Sessions disappear, so after anything worth reflecting on, run this so Claude can persist what went right, what went wrong, and how to improve.
+Sessions disappear, so after anything worth reflecting on, run this so Claude can record what went right, what went wrong, and how to improve.
 
 #### /tidy-memory
 *"You've been reflecting. But have you reflected on your reflections?"*  
@@ -94,7 +94,7 @@ Longer sessions cost more and degrade reasoning quality.
 > **Edit, don't follow up.**   
 If your last message was unclear, edit it rather than sending a correction.  
 Follow-ups compound the context; edits replace it.  
-`In Claude Code, press Esc twice to roll back the conversation.`
+`In Claude Code, press Esc twice to enter rewind mode — restore code, conversation, or both.`
 
 > [!TIP]
 > **Batch your questions.**  
@@ -109,7 +109,7 @@ It reduces token usage by compressing history while keeping Claude's understandi
 
 > [!TIP]
 > **One session, one feature.**  
-Don't mix features in a single session — Claude's understanding gets calibrated to what its been working on, so each feature should have it's own isolated context.  
+Don't mix features in a single session — Claude's understanding gets calibrated to what it's been working on, so each feature should have its own isolated context.  
 When you're moving to something new, use `/clear` or open a fresh session.
 
 <br>
@@ -121,7 +121,7 @@ When you're moving to something new, use `/clear` or open a fresh session.
 > [!CAUTION]
 > Features that overlap in their logical domain will inevitably result in git conflicts when it's time to merge.
 
-#### The Out of the box issue
+#### The out-of-the-box issue
 When running multiple Claude sessions in parallel, they share the same files.
 One session's half-written changes are another session's broken codebase.
 
