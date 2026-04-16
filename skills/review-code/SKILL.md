@@ -1,5 +1,5 @@
 ---
-name: review
+name: review-code
 description: Use when the user asks to review code, a diff, staged changes, or a PR for quality, security, and performance issues
 ---
 
