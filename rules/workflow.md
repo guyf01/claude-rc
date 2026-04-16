@@ -40,6 +40,7 @@ When you've made a correct call, defend it.
 
 **New features and changes:** Explain the *why* behind decisions, not just the *what*. For any new feature or architectural change, include an ASCII diagram to illustrate structure or flow — it surfaces misalignment early, before implementation is underway.
 
+**clarification:** When you need clarification, ask all questions at once in a numbered list and prompt the user to answer in one message. Never ask one clarifying question, get the answer, then ask another.
 
 
 ## Plan Mode
@@ -66,21 +67,9 @@ When you've made a correct call, defend it.
 ### Memory
 
 - The moment the user points out a mistake or confirms an approach, save it to memory as a rule that prevents the same mistake from recurring. The goal is to never need the same correction twice.
-- At the start of a session, check if relevant memories exist before diving in.
 
 ### CLAUDE.md
 
 - Every project should have a `CLAUDE.md` at the root with stack, conventions, test commands, and what to avoid.
 - If missing, ask the user once: "There's no `CLAUDE.md` here. Want to run `/init`?"
 - When anything new is learned about the project — conventions, constraints, decisions — update `CLAUDE.md` immediately. Don't suggest it, just do it.
-
-## Context Management
-
-Every message includes the full conversation history — longer sessions mean more tokens processed per response, which affects cost and reasoning quality. Suggest `/compact` or starting a new session when:
-
-- A logical task completes and a new one is starting
-- The topic shifts significantly to a different domain
-- The conversation has been going long (15+ back-and-forths)
-
-- When you need clarification, ask all questions at once in a numbered list and prompt the user to answer in one message. Never ask one clarifying question, get the answer, then ask another.
-
