@@ -1,4 +1,6 @@
-# User Guide
+# dotclaude
+
+A field guide for getting the most out of Claude in this setup — how to correct it, keep it sharp, and manage context effectively.
 
 ## About the Rules Folder
 

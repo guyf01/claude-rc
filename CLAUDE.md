@@ -10,7 +10,7 @@ skills/      — Slash commands for specific workflows
 agents/      — Subagent definitions for specialized tasks
 hooks/       — Shell scripts that run on Claude Code events
 bookmarks.md  — Reference links: installed plugins, inspiration, tools to explore
-for-humans.md — Human-facing guidance on how to operate Claude effectively
+README.md     — Human-facing guidance on how to operate Claude effectively
 settings.json — Hook configuration
 setup.sh      — Initial setup script
 ```
