@@ -1,4 +1,4 @@
-# dotclaude
+# claude-rc
 
 Personal Claude Code configuration repo. Defines the rules, skills, agents, and hooks that apply globally across all projects.
 

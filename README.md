@@ -1,4 +1,4 @@
-# dotclaude
+# claude-rc
 
 ---
 
@@ -8,8 +8,8 @@
 The script is non-destructive — it skips anything that already exists, so your current config stays intact.
 
 ```bash
-git clone https://github.com/guyf01/dotclaude
-cd dotclaude
+git clone https://github.com/guyf01/claude-rc
+cd claude-rc
 bash setup.sh
 ```
 
