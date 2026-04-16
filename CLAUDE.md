@@ -19,7 +19,7 @@ setup.sh      — Initial setup script
 
 **Rules** — one domain per file. If a file needs section comments to separate concerns, split it. Add new rules to the relevant existing file, or create a new file for a genuinely new domain.
 
-**Skills** — each skill is a folder with a `SKILL.md` file. Keep it under 500 lines. Put detailed reference material in a `references/` subfolder. The `description` field in the frontmatter determines when the skill auto-triggers — make it specific.
+**Skills** — each skill is a folder with a `SKILL.md` file. Keep it under 500 lines. Put detailed reference material in a `references/` subfolder. The `description` field in the frontmatter determines when the skill auto-triggers — make it specific. For invoke-only skills, add `disable-model-invocation: true` to the frontmatter.
 
 **Agents** — subagent definitions. Each agent has one clear purpose.
 

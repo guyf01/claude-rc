@@ -19,7 +19,8 @@ Read back through the conversation and identify:
 - **Project context** — goals, constraints, stakeholders, deadlines
 - **What didn't work** — approaches tried and abandoned, and why
 
-Be selective. The question is: *would a future session benefit from knowing this?* If yes, save it. If it's obvious from the code or derivable from git history, skip it.
+Be selective, The question is: *would a future session benefit from knowing this?*
+Skip only what is truly derivable from reading the current code or git history. If it required a discussion, a correction, or a deliberate decision to arrive at — save it. "Obvious in hindsight" is not a reason to skip.
 
 ## Step 2: Save to memory and CLAUDE.md
 
