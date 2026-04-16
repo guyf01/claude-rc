@@ -4,8 +4,6 @@
 
 ## A sharper Claude. Every project, every session.
 
-Rules to keep it honest. Skills to keep it sharp. Configured once. Active everywhere.
-
 </div>
 
 <br>
@@ -17,7 +15,7 @@ Clone the repo anywhere on your machine and run the setup script.
 It symlinks `rules/`, `skills/`, `agents/`, `hooks/`, and `settings.json` into `~/.claude/` so Claude picks them up globally.
 
 > [!IMPORTANT]
-> The script is non-destructive — it skips anything that already exists, so your current config stays intact.
+> The script skips anything that already exists, so your current config stays intact.
 
 ```bash
 git clone https://github.com/guyf01/claude-rc
@@ -39,20 +37,21 @@ Enable it before running the script.
 
 ## Working with claude-rc
 
-Things specific to this repo — how to get the most out of what's installed.
-
-<br>
+How to get the most out of what's installed.
 
 ### About the Rules Folder
 
-Everything in `rules/` is an instruction for Claude. Read and understand it — those rules define how Claude is supposed to behave across all sessions.
+Everything in `rules/` is an instruction for Claude.  
+Read and understand it, those rules define how Claude is **supposed** to behave across all sessions.
 
-Rules are not enforced automatically — Claude might not follow them in practice.
-When you notice it:
-- Tell it: *"you violated some of your rules"* — Claude should check and self-correct.
-- Call out the specific behavior directly: *"you're supposed to search before answering, why didn't you?"*
+> [!ATTENTION]
+>Rules are not enforced, Claude might not follow them in practice.  
 
-Claude should correct itself when confronted. If it doesn't, that's a gap worth fixing in the rules.
+When you notice it, call it out:
+- *"you violated some of your rules"* — Claude should check and self-correct.
+- *"you're supposed to search before answering, why didn't you?"*
+
+Claude should correct itself when confronted. If it doesn't, Consider installing the claude whip to teach the clanker some manners.
 
 <br>
 
@@ -83,11 +82,14 @@ Claude re-reads the full conversation history on every message. Longer sessions 
 > **Edit, don't follow up.** If your last message was unclear, edit it rather than sending a correction. Follow-ups compound the context; edits replace it.
 In Claude Code, press Esc twice to roll back the conversation.
 
+> [!TIP]
 > **Batch your questions.** If you have multiple things to ask, say, or note — put them all in one message. Each separate message triggers a full context re-read, and splitting your thoughts gives Claude a narrower picture. One message with everything means fewer steps and better solutions.
 
+> [!TIP]
 > **Compact on long sessions.** When you're continuing in the same logical domain but the conversation is getting long (either high context usage or 15+ messages) — run `/compact`.
 It reduces token usage by compressing history while keeping Claude's understanding of the current task intact.
 
+> [!TIP]
 > **One session, one feature.** Don't mix features in a single session — Claude's understanding gets calibrated to what its been working on, so each feature should have it's own isolated context. When you're moving to something new, use `/clear` or open a fresh session.
 
 <br>
