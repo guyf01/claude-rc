@@ -41,8 +41,9 @@ How to get the most out of this repository.
 
 ### About the Rules Folder
 
-Everything in `rules/` are passive instructions loaded at the start of every session for Claude.  
-Read and understand it, those rules define how Claude is **supposed** to behave across all sessions.
+`rules/` contains **passive** instructions, automatically loaded into context at the start of every session.
+
+Read and understand them, those rules define how Claude is **supposed** to behave across all sessions.
 
 > [!WARNING]
 >Rules are automatically loaded, but not enforced. Claude might deviate from them in practice.  
@@ -59,16 +60,16 @@ If it doesn't, Consider installing the claude whip to teach the clanker some man
 ### Keep Claude Sharp
 
 #### /find-tools
-`Give me six hours to chop down a tree and I will spend the first four sharpening the axe.`  
+*"Give me six hours to chop down a tree and I will spend the first four sharpening the axe."*  
 Starting something new and not sure what's available?  
 Before starting anything new, run this to find the right skill for the job. 
 
 #### /reflect
-`Everyone learns from experience. Claude is no different.`  
+*"Everyone learns from experience. Claude is no different."*  
 Sessions disappear, so after anything worth reflecting on, run this so Claude can persist what went right, what went wrong, and how to improve.
 
 #### /tidy-memory
-`You've been reflecting. But have you reflected on your reflections?`  
+*"You've been reflecting. But have you reflected on your reflections?"*  
 Stale entries, duplicates, and outdated context build up over time.  
 This prunes what's holding Claude back and sharpens what's worth keeping.
 
