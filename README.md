@@ -28,8 +28,8 @@ bash setup.sh
 > [!NOTE]
 > **Windows:** symlinks require Developer Mode (`Settings → System → For developers`).  Enable it before running the script.
 
----  
-
+---
+<br>
 
 ## Working with claude-rc
 
@@ -44,8 +44,9 @@ When you notice it:
 - Tell it: *"you violated some of your rules"* — Claude should check and self-correct.
 - Call out the specific behavior directly: *"you're supposed to search before answering, why didn't you?"*
 
-Claude should correct itself when confronted. If it doesn't, that's a gap worth fixing in the rules.  
+Claude should correct itself when confronted. If it doesn't, that's a gap worth fixing in the rules.
 
+<br>
 
 ### Keep Claude Sharp
 
@@ -55,8 +56,9 @@ Claude should correct itself when confronted. If it doesn't, that's a gap worth 
 
 **`/tidy-memory`** — You've been reflecting. But have you reflected on your reflections? Stale entries, duplicates, and outdated context build up over time. This prunes what's holding Claude back and sharpens what's worth keeping.
 
----  
+---
 
+<br>
 
 ## Using Claude Effectively
 
@@ -75,8 +77,9 @@ In Claude Code, press Esc twice to roll back the conversation.
 **Compact on long sessions.** When you're continuing in the same logical domain but the conversation is getting long (either high context usage or 15+ messages) — run `/compact`.
 It reduces token usage by compressing history while keeping Claude's understanding of the current task intact.
 
-**One session, one feature.** Don't mix features in a single session — Claude's understanding gets calibrated to what its been working on, so each feature should have it's own isolated context. When you're moving to something new, use `/clear` or open a fresh session.  
+**One session, one feature.** Don't mix features in a single session — Claude's understanding gets calibrated to what its been working on, so each feature should have it's own isolated context. When you're moving to something new, use `/clear` or open a fresh session.
 
+<br>
 
 ### Parallel Work
 
