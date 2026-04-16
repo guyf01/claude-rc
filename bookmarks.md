@@ -112,4 +112,4 @@
 ## Ideas
 *Original ideas for skills or tools to build.*
 
-- **`/done` skill** — end-of-session forcing function. Summarize what was decided/discovered, write to CLAUDE.md and memory, then hand off to `finishing-a-development-branch` for git/worktree cleanup. Motivation: current memory rules are passive. 
+If it's empty it means all current ideas were already built (:
