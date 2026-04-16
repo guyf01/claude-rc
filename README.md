@@ -1,6 +1,27 @@
 # dotclaude
 
-A field guide for getting the most out of Claude in this setup — how to correct it, keep it sharp, and manage context effectively.
+---
+
+## Getting Started
+
+**Full setup** — clone the repo anywhere on your machine and run the setup script. It symlinks `rules/`, `skills/`, `agents/`, `hooks/`, and `settings.json` into `~/.claude/` so Claude picks them up globally.
+The script is non-destructive — it skips anything that already exists, so your current config stays intact.
+
+```bash
+git clone https://github.com/guyf01/dotclaude
+cd dotclaude
+bash setup.sh
+```
+
+> **Windows:** symlinks require Developer Mode (`Settings → System → For developers`). Enable it before running the script.
+
+**Prerequisites:** `bash`, `git`, `jq` (required by the hooks — `brew install jq` / `apt install jq` / [jq releases](https://jqlang.github.io/jq/download/)).
+
+---
+
+## Using Claude Effectively
+
+---
 
 ## About the Rules Folder
 
