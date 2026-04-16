@@ -62,7 +62,7 @@ Claude should correct itself when confronted.
 
 #### /find-tools
 *"Give me six hours to chop down a tree and I will spend the first four sharpening the axe."*  
-Starting something new and not sure what's available?  
+Starting something new? Not sure what's available?  
 Before starting anything new, run this to find the right skill for the job. 
 
 #### /reflect
@@ -89,7 +89,6 @@ General habits that make Claude better regardless of what's installed.
 
 Claude re-reads the full conversation history on every message.  
 Longer sessions cost more and degrade reasoning quality.  
-A few habits that help:
 
 > [!TIP]
 > **Edit, don't follow up.**   
@@ -105,7 +104,7 @@ One message with everything means fewer steps and better solutions.
 
 > [!TIP]
 > **Compact on long sessions.**  
-When you're continuing in the same logical domain but the conversation is getting long (either high context usage or 15+ messages) — run `/compact`. 
+When you're continuing in the same logical domain but the conversation is getting long (either high context usage or 15+ messages) — run `/compact`.  
 It reduces token usage by compressing history while keeping Claude's understanding of the current task intact.
 
 > [!TIP]
