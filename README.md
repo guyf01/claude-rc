@@ -27,8 +27,7 @@ bash setup.sh
 
 > [!NOTE]
 > **Windows:**  
-symlinks require Developer Mode (`Settings → System → For developers`).  
-Enable it before running the script.
+symlinks require Developer Mode (`Settings → System → For developers`).
 
 <br>
 
@@ -46,10 +45,10 @@ Everything in `rules/` are passive instructions loaded at the start of every ses
 Read and understand it, those rules define how Claude is **supposed** to behave across all sessions.
 
 > [!WARNING]
->Rules are not enforced, Claude might not follow them in practice.  
+>Rules are automatically loaded, but not enforced. Claude might deviate from them in practice.  
 
 When you notice claude is misbehaving, call it out:
-- *"you violated some of your rules"* — Claude should check and self-correct.
+- *"you violated some of your rules"*
 - *"you're supposed to search before answering, why didn't you?"*
 
 Claude should correct itself when confronted.  
@@ -59,17 +58,17 @@ If it doesn't, Consider installing the claude whip to teach the clanker some man
 
 ### Keep Claude Sharp
 
-#### /find-tools  
-Give me six hours to chop down a tree and I will spend the first four sharpening the axe.  
+#### /find-tools
+`Give me six hours to chop down a tree and I will spend the first four sharpening the axe.`  
 Starting something new and not sure what's available?  
 Before starting anything new, run this to find the right skill for the job. 
 
-#### /reflect  
-Everyone learns from experience. Claude is no different.  
+#### /reflect
+`Everyone learns from experience. Claude is no different.`  
 Sessions disappear, so after anything worth reflecting on, run this so Claude can persist what went right, what went wrong, and how to improve.
 
-#### /tidy-memory  
-You've been reflecting. But have you reflected on your reflections?  
+#### /tidy-memory
+`You've been reflecting. But have you reflected on your reflections?`  
 Stale entries, duplicates, and outdated context build up over time.  
 This prunes what's holding Claude back and sharpens what's worth keeping.
 
@@ -86,21 +85,31 @@ General habits that make Claude better regardless of what's installed.
 
 ### Context Hygiene
 
-Claude re-reads the full conversation history on every message. Longer sessions cost more and degrade reasoning quality. A few habits that help:
+Claude re-reads the full conversation history on every message.  
+Longer sessions cost more and degrade reasoning quality.  
+A few habits that help:
 
 > [!TIP]
-> **Edit, don't follow up.** If your last message was unclear, edit it rather than sending a correction. Follow-ups compound the context; edits replace it.
-In Claude Code, press Esc twice to roll back the conversation.
+> **Edit, don't follow up.**   
+If your last message was unclear, edit it rather than sending a correction.  
+Follow-ups compound the context; edits replace it.  
+`In Claude Code, press Esc twice to roll back the conversation.`
 
 > [!TIP]
-> **Batch your questions.** If you have multiple things to ask, say, or note — put them all in one message. Each separate message triggers a full context re-read, and splitting your thoughts gives Claude a narrower picture. One message with everything means fewer steps and better solutions.
+> **Batch your questions.**  
+If you have multiple things to ask, say, or note — put them all in one message.  
+Each separate message triggers a full context re-read, and splitting your thoughts gives Claude a narrower picture.  
+One message with everything means fewer steps and better solutions.
 
 > [!TIP]
-> **Compact on long sessions.** When you're continuing in the same logical domain but the conversation is getting long (either high context usage or 15+ messages) — run `/compact`.
+> **Compact on long sessions.**  
+When you're continuing in the same logical domain but the conversation is getting long (either high context usage or 15+ messages) — run `/compact`. 
 It reduces token usage by compressing history while keeping Claude's understanding of the current task intact.
 
 > [!TIP]
-> **One session, one feature.** Don't mix features in a single session — Claude's understanding gets calibrated to what its been working on, so each feature should have it's own isolated context. When you're moving to something new, use `/clear` or open a fresh session.
+> **One session, one feature.**  
+Don't mix features in a single session — Claude's understanding gets calibrated to what its been working on, so each feature should have it's own isolated context.  
+When you're moving to something new, use `/clear` or open a fresh session.
 
 <br>
 
