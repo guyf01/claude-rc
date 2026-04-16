@@ -2,7 +2,7 @@
 
 # claude-rc
 
-## A sharper Claude. Every project, every session.
+## A sharper Claude. Every project. Every session.
 
 </div>
 
@@ -44,10 +44,10 @@ How to get the most out of what's installed.
 Everything in `rules/` is an instruction for Claude.  
 Read and understand it, those rules define how Claude is **supposed** to behave across all sessions.
 
-> [!ATTENTION]
+> [!WARNING]
 >Rules are not enforced, Claude might not follow them in practice.  
 
-When you notice it, call it out:
+When you notice claude is miss behaving, call it out:
 - *"you violated some of your rules"* — Claude should check and self-correct.
 - *"you're supposed to search before answering, why didn't you?"*
 
@@ -57,11 +57,19 @@ Claude should correct itself when confronted. If it doesn't, Consider installing
 
 ### Keep Claude Sharp
 
-**`/find-tools`** — Give me six hours to chop down a tree and I will spend the first four sharpening the axe. Starting something new and not sure what's available? Before starting anything new, run this to find the right skill for the job. 
+**`/find-tools`**  
+Give me six hours to chop down a tree and I will spend the first four sharpening the axe.  
+Starting something new and not sure what's available?  
+Before starting anything new, run this to find the right skill for the job. 
 
-**`/reflect`** — Everyone learns from experience. Claude is no different. Conversations disappear, so after anything worth reflecting on, run this so Claude can persist what went right, what went wrong, and how to improve.
+**`/reflect`**  
+Everyone learns from experience. Claude is no different.  
+Sessions disappear, so after anything worth reflecting on, run this so Claude can persist what went right, what went wrong, and how to improve.
 
-**`/tidy-memory`** — You've been reflecting. But have you reflected on your reflections? Stale entries, duplicates, and outdated context build up over time. This prunes what's holding Claude back and sharpens what's worth keeping.
+**`/tidy-memory`**  
+You've been reflecting. But have you reflected on your reflections?  
+Stale entries, duplicates, and outdated context build up over time.  
+This prunes what's holding Claude back and sharpens what's worth keeping.
 
 <br>
 
