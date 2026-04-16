@@ -53,7 +53,8 @@ When you notice claude is misbehaving, call it out:
 - *"you're supposed to search before answering, why didn't you?"*
 
 Claude should correct itself when confronted.  
-If it doesn't, Consider installing the claude whip to teach the clanker some manners.
+> [!TIP]
+> If it doesn't, Consider installing the claude whip to teach the clanker some manners.
 
 <br>
 
