@@ -20,9 +20,7 @@ bash setup.sh
 ```
 
 > [!NOTE]
-> **Windows:** symlinks require Developer Mode (`Settings → System → For developers`). Enable it before running the script.
-
-**Prerequisites:** `bash`, `git`, `jq` — install jq with `brew install jq` or `apt install jq`.
+> **Windows:** symlinks require Developer Mode (`Settings → System → For developers`).  Enable it before running the script.
 
 ---
 
