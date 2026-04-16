@@ -4,7 +4,7 @@
 
 ## A sharper Claude. Every project, every session.
 
-Behavior rules, workflow skills, and safety hooks — configured once in `~/.claude/` and active everywhere.
+Rules that keep it honest. Skills that keep it sharp. Configured once. Active everywhere.
 
 </div>
 
