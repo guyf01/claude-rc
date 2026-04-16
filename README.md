@@ -32,7 +32,9 @@ bash setup.sh
 Enable it before running the script.
 
 <br>
+
 ---
+
 <br>
 
 ## Working with claude-rc
@@ -63,7 +65,9 @@ Claude should correct itself when confronted. If it doesn't, that's a gap worth 
 **`/tidy-memory`** — You've been reflecting. But have you reflected on your reflections? Stale entries, duplicates, and outdated context build up over time. This prunes what's holding Claude back and sharpens what's worth keeping.
 
 <br>
+
 ---
+
 <br>
 
 ## Using Claude Effectively
@@ -75,15 +79,16 @@ General habits that make Claude better regardless of what's installed.
 
 Claude re-reads the full conversation history on every message. Longer sessions cost more and degrade reasoning quality. A few habits that help:
 
-**Edit, don't follow up.** If your last message was unclear, edit it rather than sending a correction. Follow-ups compound the context; edits replace it.
+> [!TIP]
+> **Edit, don't follow up.** If your last message was unclear, edit it rather than sending a correction. Follow-ups compound the context; edits replace it.
 In Claude Code, press Esc twice to roll back the conversation.
 
-**Batch your questions.** If you have multiple things to ask, say, or note — put them all in one message. Each separate message triggers a full context re-read, and splitting your thoughts gives Claude a narrower picture. One message with everything means fewer steps and better solutions.
+> **Batch your questions.** If you have multiple things to ask, say, or note — put them all in one message. Each separate message triggers a full context re-read, and splitting your thoughts gives Claude a narrower picture. One message with everything means fewer steps and better solutions.
 
-**Compact on long sessions.** When you're continuing in the same logical domain but the conversation is getting long (either high context usage or 15+ messages) — run `/compact`.
+> **Compact on long sessions.** When you're continuing in the same logical domain but the conversation is getting long (either high context usage or 15+ messages) — run `/compact`.
 It reduces token usage by compressing history while keeping Claude's understanding of the current task intact.
 
-**One session, one feature.** Don't mix features in a single session — Claude's understanding gets calibrated to what its been working on, so each feature should have it's own isolated context. When you're moving to something new, use `/clear` or open a fresh session.
+> **One session, one feature.** Don't mix features in a single session — Claude's understanding gets calibrated to what its been working on, so each feature should have it's own isolated context. When you're moving to something new, use `/clear` or open a fresh session.
 
 <br>
 
@@ -91,7 +96,8 @@ It reduces token usage by compressing history while keeping Claude's understandi
 
 **The goal:** each feature gets its own branch, filesystem, and session — fully isolated. Multiple features progress in parallel without ever stepping on each other.
 
-Use with caution: features that overlap in their logical domain will inevitably result in git conflicts when it's time to merge.
+> [!CAUTION]
+> Features that overlap in their logical domain will inevitably result in git conflicts when it's time to merge.
 
 #### The Out of the box issue
 When running multiple Claude sessions in parallel, they share the same files.
