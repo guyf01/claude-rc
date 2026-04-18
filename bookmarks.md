@@ -21,13 +21,13 @@
 ## Installed Plugins
 *Plugins currently active via `/plugin install`.*
 
-- [superpowers](https://github.com/claude-plugins-official/superpowers) — core workflow skills: brainstorming, planning, debugging, code review, TDD, subagents, git worktrees, verification
+- [superpowers](https://github.com/obra/superpowers) — core workflow skills: brainstorming, planning, debugging, code review, TDD, subagents, git worktrees, verification
 - [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) — distinctive production-grade UI generation, avoids generic AI aesthetics
 - [skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator) — full skill development lifecycle: write, evaluate, benchmark, and iterate on skills
-- [code-review](https://github.com/claude-plugins-official/code-review) — PR code review
-- [feature-dev](https://github.com/claude-plugins-official/feature-dev) — guided feature development with codebase understanding
-- [ralph-loop](https://github.com/claude-plugins-official/ralph-loop) — recurring prompt loop runner
-- [security-guidance](https://github.com/claude-plugins-official/security-guidance) — security review and guidance
+- [code-review](https://github.com/anthropics/claude-code/tree/main/plugins/code-review) — PR code review
+- [feature-dev](https://github.com/anthropics/claude-code/tree/main/plugins/feature-dev) — guided feature development with codebase understanding
+- [ralph-loop](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/ralph-loop) — recurring prompt loop runner
+- [security-guidance](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance) — security review and guidance
 - [wondelai/skills — code-craftsmanship](https://github.com/wondelai/skills) — clean-code, refactoring-patterns, software-design-philosophy, pragmatic-programmer, domain-driven-design
 - [wondelai/skills — systems-architecture](https://github.com/wondelai/skills) — ddia-systems, system-design, clean-architecture, release-it, high-perf-browser
 - [wondelai/skills — product-strategy](https://github.com/wondelai/skills) — jobs-to-be-done, negotiation, mom-test
