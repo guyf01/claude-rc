@@ -111,6 +111,8 @@
 
 - [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — 27.6k stars. Makes Claude talk like a caveman to cut output tokens ~65%. Viral meme with a real eval harness. The one useful piece: `caveman-compress` rewrites memory files to reduce session-start tokens ~46%.
 
+- [sherifkozman/the-llm-council](https://github.com/sherifkozman/the-llm-council) — Python package with a proper 5-stage pipeline: parallel drafts → adversarial critique → synthesis → validation. Fixes the main flaw of claude-council (no synthesis). Remaining flaw: if all models agree on something wrong, synthesis launders bad consensus into a confident-sounding answer. Supports OpenRouter, Anthropic, Gemini, Vertex, and CLI providers (Claude Code, Codex). Mode-aware routing for architecture vs. quick tasks.
+
 - [hex/claude-council](https://github.com/hex/claude-council) — queries Gemini, GPT, Grok, and Perplexity in parallel, then runs a second round where they critique each other. The debate round is the valuable idea: forcing models to confront alternatives surfaces blind spots that a single query misses. Core flaw: synthesis is left to the user — four responses side-by-side isn't an answer, it's four answers.
 
 ## Ideas
