@@ -111,6 +111,8 @@
 
 - [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — 27.6k stars. Makes Claude talk like a caveman to cut output tokens ~65%. Viral meme with a real eval harness. The one useful piece: `caveman-compress` rewrites memory files to reduce session-start tokens ~46%.
 
+- [hex/claude-council](https://github.com/hex/claude-council) — queries Gemini, GPT, Grok, and Perplexity in parallel, then runs a second round where they critique each other. The debate round is the valuable idea: forcing models to confront alternatives surfaces blind spots that a single query misses. Core flaw: synthesis is left to the user — four responses side-by-side isn't an answer, it's four answers.
+
 ## Ideas
 *Original ideas for skills or tools to build.*
 
