@@ -114,6 +114,14 @@ When you're moving to something new, use `/clear` or open a fresh session.
 
 <br>
 
+### Model Strategy
+
+> [!TIP]
+> **Use Opus as your advisor.**
+> Run `/advisor` once to set Opus as the reviewer Claude consults during complex work. It persists across sessions — Sonnet handles execution, Opus catches what it misses.
+
+<br>
+
 ### Parallel Work
 
 **The goal:** each feature gets its own branch, filesystem, and session — fully isolated. Multiple features progress in parallel without ever stepping on each other.
