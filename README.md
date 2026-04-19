@@ -89,6 +89,45 @@ This prunes what's holding Claude back and sharpens what's worth keeping.
 General habits that make Claude better regardless of what's installed.
 
 
+### Context Engineering
+
+Context engineering is about giving the model the right information to do what you need.  
+A well-written prompt with poor context leads to poor results.  
+> [!IMPORTANT]
+> The instruction tells the model *how* to behave, but context determines *what it's reasoning over*.
+
+#### Prompt Engineering
+
+Prompt engineering is focused on instructions to the llm.  
+How you tell the model to behave, what role to take, what constraints to apply, what format to produce.
+
+**What makes a good prompt:**
+
+**Role** — tell the model what it is. A model told it's a senior security engineer reasons differently than one given no framing at all.
+
+**Task** — be explicit about what you want, not just the topic. "Review this for SQL injection" is sharper than "look at this code."
+
+**Format** — specify the output structure. Bullet list, numbered steps, table, prose — if you don't say, the model decides, and it may not match what you need.
+
+**Constraints** — what the model should *not* do matters as much as what it should. Scope boundaries prevent the model from drifting into adjacent territory.
+
+**Examples** — showing beats telling. A single example of the output you want calibrates the model faster than a paragraph of description.
+
+#### Common context issues
+
+**Context poisoning** — bad or incorrect information in the context window. The model has no way to know it's wrong and will reason from it as if it were fact.
+
+**Context distraction** — too much irrelevant information mixed in. The model still has to process everything in the window, so burying the signal in noise degrades output quality.
+
+**Context clashing** — contradicting instructions or information. When the model encounters conflicting signals, it produces inconsistent behavior with no reliable way to predict which side it'll favour.
+
+#### Common context solutions
+
+- **RAG** — rather than loading everything upfront, pull only the context relevant to the current task.
+- **Compression** — `/compact` strips the conversation down to what matters and discards the rest, keeping the model working on signal.
+
+<br>
+
 ### Context Hygiene
 
 Claude re-reads the full conversation history on every message.  
