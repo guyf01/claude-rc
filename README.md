@@ -159,6 +159,13 @@ Follow-ups compound the context; edits replace it.
 `In Claude Code, press Esc twice to enter rewind mode — restore code, conversation, or both.`
 
 > [!TIP]
+> **The two-correction rule.**  
+Don't correct Claude on the same problem more than twice.
+Each failed attempt poisons the context with wrong approaches, and every new message in that session.  
+Rewind to before the original question (Esc twice) or `/clear` and rewrite with what you learned. `/compact` won't help. it keeps the failed approaches, just compressed.  
+Failed attempts tell you what was missing — tighter scope, edge cases, constraints
+
+> [!TIP]
 > **Batch your questions.**  
 If you have multiple things to ask, say, or note — put them all in one message.  
 Each separate message triggers a full context re-read, and splitting your thoughts gives Claude a narrower picture.  
