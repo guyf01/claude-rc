@@ -65,6 +65,10 @@ Claude should correct itself when confronted.
 Starting something new? Not sure what's available?  
 Before starting anything new, run this to find the right skill for the job. 
 
+#### /council
+*"It's difficult to see the picture when you're inside the frame."*  
+About to make a critical decision? Not sure what to do? Five advisors tear it apart from every angle, peer-review each other, and a chairman hands you a verdict.
+
 #### /reflect
 *"Everyone learns from experience. Claude is no different."*  
 Sessions disappear, so after anything worth reflecting on, run this so Claude can record what went right, what went wrong, and how to improve.

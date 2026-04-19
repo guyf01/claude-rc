@@ -16,6 +16,7 @@
 
 - [poshan0126/dotclaude](https://github.com/poshan0126/dotclaude) — lean, token-efficient `.claude/` config. Good reference for agent design, hooks, and scoped rules.
 - [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) — skill for eliminating AI writing tells: banned phrases, structural clichés, sentence patterns. Installed as `stop-slop` skill.
+- [@itsolelehmann — LLM Council](https://x.com/itsolelehmann/status/2038661433626333649) — council pattern implemented as a Claude Code skill: 5 thinking-style sub-agents (Contrarian, First Principles, Expansionist, Outsider, Executor), anonymous peer review, chairman synthesis.
 
 
 ## Installed Plugins
