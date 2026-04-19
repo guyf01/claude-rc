@@ -267,6 +267,18 @@ For prominent CTAs (e.g., "Get Started"), not every button:
 - Consistent icon sizing — fixed viewBox (24x24) with consistent size classes.
 - Brand logos: use official SVGs from Simple Icons — never guess or approximate logo paths.
 
+## Toasts
+
+**Position:** Desktop: bottom-right or top. Mobile: top only. Never center — center blocks what the user is doing.
+
+**Timing:** Info auto-dismisses after 4s. Warning after 7s. Errors stay until the user acknowledges. A fixed timer for all toast types is bad practice.
+
+**Stacking:** Max 3 visible at once. New toasts push old ones using spring physics: damping 20, stiffness 180.
+
+**Dismissibility:** Always dismissable — close button on all toasts, swipe gesture on mobile. Pause the auto-dismiss timer on hover. If the user can't escape it, it's not a toast — it's a modal.
+
+**Color coding:** Every type (info, warning, error, success) requires both an icon and a left border color. Background tint alone makes types hard to tell apart.
+
 ## Anti-Patterns (NEVER)
 
 - Purple gradient on white background.
