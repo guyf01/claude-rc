@@ -45,6 +45,8 @@
 
 - [andrewyng/context-hub](https://github.com/andrewyng/context-hub) — CLI tool for agents to fetch community-maintained, versioned API docs and annotate them locally. Annotation persistence and feedback loop are novel; competes with context7 MCP which solves the same problem with better ergonomics. Watch for community traction before evaluating.
 
+- [MCP] [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) — 38.5k stars. Official Chrome team. CDP-based browser control via Puppeteer: 40+ tools covering automation, performance tracing, Lighthouse audits, memory profiling, network inspection, source-mapped stack traces. No API key. Installs as a Claude Code plugin. Stronger than Playwright MCP for dev/debugging workflows; complements claude-in-chrome (which is vision-based/interactive).
+
 - [MCP] [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) — 32k stars. Browser automation via accessibility snapshots (not screenshots), so no vision model needed. 50+ tools: click/type/navigate, network mocking, storage management, tracing/video recording, PDF gen. Complements claude-in-chrome (which is vision-based + interactive); Playwright wins for headless automation and testing workflows.
 
 - [MCP] [firecrawl/firecrawl-mcp-server](https://github.com/firecrawl/firecrawl-mcp-server) — 6.2k stars. Web scraping/crawl/search MCP. Earns its place over WebFetch for three things: crawling entire sites, structured data extraction via JSON schema, and autonomous research across unknown sources. Requires a paid Firecrawl API key — evaluate when a use case actually demands it.
