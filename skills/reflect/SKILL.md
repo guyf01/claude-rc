@@ -10,30 +10,46 @@ The conversation is ephemeral. CLAUDE.md and memory are not. This skill transfer
 
 ## Step 1: Mine the conversation
 
-Read back through the conversation and identify:
+Scan the full conversation for signal worth keeping. For each candidate, ask: *would a future session benefit from knowing this?
+**Filter:**
+If it required discussion, a correction, or a deliberate decision — save it. "Obvious in hindsight" is not a reason to skip.
+If it's derivable from the code or git history, ephemeral task state, or already in CLAUDE.md/memory — skip it.
 
-- **Decisions made** — architectural choices, tech selections, approaches taken and why
-- **Conventions discovered** — naming patterns, code style, project-specific rules
-- **Mistakes corrected** — things you got wrong that the user had to fix
-- **Preferences revealed** — how the user likes to work, what they don't want
-- **Project context** — goals, constraints, stakeholders, deadlines
-- **What didn't work** — approaches tried and abandoned, and why
+Look for:
+- **Conventions discovered** — naming patterns, code style, file format rules, structural standards
+- **Architectural decisions + rationale** — choices made and WHY, especially non-obvious ones
+- **Technical dead ends** — approaches tried and abandoned, and why they failed
+- **Mistakes Claude made** — things you got wrong that the user had to correct
+- **User preferences** — how this person likes to work, what they explicitly don't want
+- **Project context** — goals, constraints, stakeholders, deadlines (convert relative dates to absolute)
 
-Be selective, The question is: *would a future session benefit from knowing this?*
-Skip only what is truly derivable from reading the current code or git history. If it required a discussion, a correction, or a deliberate decision to arrive at — save it. "Obvious in hindsight" is not a reason to skip.
+## Step 2: Route each finding
 
-## Step 2: Save to memory and CLAUDE.md
+Two destinations. One mental model:
 
-- **CLAUDE.md** — conventions, architecture, standards, constraints (normative: what should happen)
-- **Memory** — preferences, corrections, discovered patterns, project context (descriptive: what was learned)
+> **CLAUDE.md** = what a fresh Claude session needs to work correctly in this project
+> **Memory** = what Claude learned about this human
 
-Follow the system memory instructions for types and file format.
+**The test:** *"Would this go in a project README or onboarding doc?"* → CLAUDE.md. *"Is this about how Claude should interact with this specific person?"* → memory.
 
-## Step 3: Report
+| Finding | Destination | Why |
+|---|---|---|
+| Conventions discovered | CLAUDE.md | Project rules, not personal |
+| Architectural decisions + rationale | CLAUDE.md | Fresh session needs the WHY |
+| Technical dead ends | CLAUDE.md | Avoid repeating failed approaches |
+| Mistakes Claude made | Memory | Behavioral correction for Claude |
+| User preferences | Memory | Personal to this human |
+| Project context (goals, deadlines) | Memory | Situational, not normative |
 
-Tell the user what you saved, in one short list:
-- What went to memory (just the topic, not the full content)
-- What went to CLAUDE.md (if anything)
-- What was skipped and why (if anything significant was left out)
+**Hard case:** "What didn't work" splits — technical failure → CLAUDE.md, style/approach failure → memory.
 
-Keep it brief. They can read the files if they want the details.
+## Step 3: Save
+
+Write each finding to its destination. Follow the system memory instructions for memory file format and types.
+
+## Step 4: Report
+
+One short list:
+- What went to CLAUDE.md (topic only)
+- What went to memory (topic only)
+- What was skipped and why (only if significant)
