@@ -45,6 +45,8 @@
 
 - [andrewyng/context-hub](https://github.com/andrewyng/context-hub) — CLI tool for agents to fetch community-maintained, versioned API docs and annotate them locally. Annotation persistence and feedback loop are novel; competes with context7 MCP which solves the same problem with better ergonomics. Watch for community traction before evaluating.
 
+- [MCP] [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) — 32k stars. Browser automation via accessibility snapshots (not screenshots), so no vision model needed. 50+ tools: click/type/navigate, network mocking, storage management, tracing/video recording, PDF gen. Complements claude-in-chrome (which is vision-based + interactive); Playwright wins for headless automation and testing workflows.
+
 - [MCP] [ppl-ai/modelcontextprotocol](https://github.com/ppl-ai/modelcontextprotocol) — official Perplexity MCP server. 4 tools: web search, conversational search (sonar-pro), deep research (sonar-deep-research), and reasoning (sonar-reasoning-pro). Redundant with Claude's built-in web search for most uses; `perplexity_research` is the one differentiator worth evaluating.
 
 - [garrytan/gstack](https://github.com/garrytan/gstack) — 23 CLI skills from YC's Garry Tan. Core value: sequential pipeline (office-hours → plan → review → qa → ship) that enforces steps developers skip under pressure. Also has parallel sprint support via isolated workspaces and cross-model reviews (Claude + Codex). Heavy — evaluate for cherry-picking the pipeline pattern, not wholesale install.
