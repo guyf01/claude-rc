@@ -3,6 +3,8 @@
 ## Reference
 *Guides, indexes, and catalogs to browse when learning or discovering new tools. Read, don't install.*
 
+- [mattpocock/dictionary-of-ai-coding](https://github.com/mattpocock/dictionary-of-ai-coding) — ~80-term plain-English glossary of AI coding vocabulary: tokens, context windows, attention degradation, harness patterns, handoff artifacts, memory/steering. Useful when writing skill descriptions and rule files.
+
 - [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) — curated index of Claude Code skills, workflows, tooling, hooks, slash commands, CLAUDE.md files, status lines, and alternative clients. Pure reference — links with descriptions, no implementations in the repo itself.
 
 - [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) — 41.6k stars. Knowledge base curated from Boris Cherny (Claude Code creator) and Thariq posts. 69 tips, best practice guides for skills/hooks/MCP/subagents, workflows, and reports. Most current and authoritative Claude Code reference available.
