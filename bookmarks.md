@@ -47,6 +47,8 @@
 
 - [MCP] [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) — 32k stars. Browser automation via accessibility snapshots (not screenshots), so no vision model needed. 50+ tools: click/type/navigate, network mocking, storage management, tracing/video recording, PDF gen. Complements claude-in-chrome (which is vision-based + interactive); Playwright wins for headless automation and testing workflows.
 
+- [MCP] [firecrawl/firecrawl-mcp-server](https://github.com/firecrawl/firecrawl-mcp-server) — 6.2k stars. Web scraping/crawl/search MCP. Earns its place over WebFetch for three things: crawling entire sites, structured data extraction via JSON schema, and autonomous research across unknown sources. Requires a paid Firecrawl API key — evaluate when a use case actually demands it.
+
 - [MCP] [ppl-ai/modelcontextprotocol](https://github.com/ppl-ai/modelcontextprotocol) — official Perplexity MCP server. 4 tools: web search, conversational search (sonar-pro), deep research (sonar-deep-research), and reasoning (sonar-reasoning-pro). Redundant with Claude's built-in web search for most uses; `perplexity_research` is the one differentiator worth evaluating.
 
 - [garrytan/gstack](https://github.com/garrytan/gstack) — 23 CLI skills from YC's Garry Tan. Core value: sequential pipeline (office-hours → plan → review → qa → ship) that enforces steps developers skip under pressure. Also has parallel sprint support via isolated workspaces and cross-model reviews (Claude + Codex). Heavy — evaluate for cherry-picking the pipeline pattern, not wholesale install.
