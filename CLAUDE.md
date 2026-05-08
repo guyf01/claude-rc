@@ -25,7 +25,7 @@ setup.sh      — Initial setup script
 
 **Hooks** — shell scripts tied to Claude Code events via `settings.json`. Touch carefully — they run on every matching event.
 
-**Bookmarks** — external references only. Two sections: `Inspiration` (sources that shaped this setup) and `To Explore` (worth revisiting later). Not for in-progress work or tasks.
+**Bookmarks** — external references only. Two sections: `Inspiration` (sources that shaped this setup) and `To Explore` (worth revisiting later). Not for in-progress work or tasks. MCP servers get an `[MCP]` prefix on their entry; regular plugins have no tag (plugin is the implicit default).
 
 ## When working in this repo
 
